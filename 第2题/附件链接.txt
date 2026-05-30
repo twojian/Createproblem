@@ -1,0 +1,24 @@
+附件1-Autofocus Technologies in Digital Cameras A Comparative Study.pdf
+https://mail.ijream.org/papers/ICFPI2018012.pdf
+
+附件2-Learning to Autofocus.pdf
+https://arxiv.org/pdf/2004.12260.pdf
+
+附件3-Sensor-Based Auto-Focusing System Using Multi-Scale Feature Extraction and Phase Correlation Matching.pdf
+https://pmc.ncbi.nlm.nih.gov/articles/PMC4435164/pdf/sensors-15-05747.pdf
+
+附件4-DeepAf One-Shot Spatiospectral Auto-Focus Model for Digital Pathology.pdf
+https://arxiv.org/pdf/2510.05315.pdf
+
+附件5-Deep Learning-Based Dynamic Region of Interest Autofocus Method for Grayscale Image.pdf
+https://www.mdpi.com/1424-8220/24/13/4336/pdf
+
+附件6-Optical Model-Driven Sharpness Mapping for Autofocus in Small Depth-of-Field and Severe Defocus Scenarios.pdf
+https://openaccess.thecvf.com/content/ICCV2025/papers/Fan_Optical_Model-Driven_Sharpness_Mapping_for_Autofocus_in_Small_Depth-of-Field_and_ICCV_2025_paper.pdf
+
+附件7-CameraSensorSizeDatabase.csv
+https://raw.githubusercontent.com/openMVG/CameraSensorSizeDatabase/master/sensor_database.csv
+
+附件8-CIPA相机市场统计2019-2025.pdf
+https://www.cipa.jp/documents/e/PRESSRELEASE20260226_e.pdf
+

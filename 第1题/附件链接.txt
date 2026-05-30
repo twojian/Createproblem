@@ -1,0 +1,24 @@
+附件1-地质灾害地基干涉雷达形变监测技术规范.pdf
+https://www.csgpc.org/ueditor/php/upload/file/20251229/1766998741950289.pdf
+
+附件2-高速公路隧道和高边坡监测技术指南DB41T2794-2024.pdf
+https://pro5323b5d3-pic11.ysjianzhan.cn/upload/136DB41-T2794-2024.pdf
+
+附件3-道路高边坡监测预警与应急处置实用（交通运输部2024）.pdf
+http://jtt.shandong.gov.cn/module/download/downfile.jsp?classid=0&filename=b2feb8343b6a4d4084d807a5d191f84f.pdf
+
+附件4-联合北斗GNSS与InSAR技术监测高陡边坡形变的研究进展.pdf
+https://www.sciopen.com/local/article_pdf/10.3876/j.issn.1000-1980.2026.01.008.pdf
+
+附件5-Deep Learning for Potential Landslide Identification Review NHESS 2026.pdf
+https://nhess.copernicus.org/articles/26/487/2026/nhess-26-487-2026.pdf
+
+附件6-Cloud-based Slope Risk Monitoring and Early Warning System Case Study Scientific Reports 2025.pdf
+https://www.nature.com/articles/s41598-025-28190-4.pdf
+
+附件7-InSAR形变时间序列与GNSS验证数据集.xlsx
+基于Sentinel-1卫星SBAS-InSAR处理结果与地面GNSS实测位移数据整理编制
+参考来源：https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0318589&type=printable
+
+附件8-皋兰山黄土坡体多参数实时监测数据集（Zenodo 2025）.xlsx
+https://zenodo.org/records/14612578

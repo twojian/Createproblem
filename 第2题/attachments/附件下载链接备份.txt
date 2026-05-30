@@ -1,0 +1,47 @@
+================================================================
+第2题 附件下载链接备份
+题目：相机自动对焦技术路线筛选与下一代产品研发方向判断
+uid：程智健_data_002
+备份时间：2026.05.26
+================================================================
+
+附件1：Autofocus Technologies in Digital Cameras A Comparative Study.pdf
+https://mail.ijream.org/papers/ICFPI2018012.pdf
+
+附件2：Learning to Autofocus.pdf
+https://arxiv.org/pdf/2004.12260.pdf
+
+附件3：CameraSensorSizeDatabase.csv
+https://raw.githubusercontent.com/openMVG/CameraSensorSizeDatabase/master/sensor_database.csv
+
+附件4：CIPA数码相机生产出货统计2019-2025.pdf
+https://www.cipa.jp/documents/e/PRESSRELEASE20260226_e.pdf
+
+附件5：Canon EOS自动对焦系统镜头对应数据一览.html
+https://www.canon.com.cn/products/camera/eos/data/index.html
+
+附件6：Nikon Z9数码相机技术规格.html
+https://onlinemanual.nikonimglib.com/z9/zh-cn/17_technical_notes_08.html
+
+附件7：Optical Model-Driven Sharpness Mapping for Autofocus in Small Depth-of-Field and Severe Defocus Scenarios.pdf
+https://openaccess.thecvf.com/content/ICCV2025/papers/Fan_Optical_Model-Driven_Sharpness_Mapping_for_Autofocus_in_Small_Depth-of-Field_and_ICCV_2025_paper.pdf
+
+附件8：日本经济产业省相机生产动态统计.xlsx
+https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040360261&fileKind=0
+
+================================================================
+数据溯源
+================================================================
+
+附件1：IJREAM学术期刊 (https://mail.ijream.org)
+附件2：arXiv预印本 (https://arxiv.org)
+附件3：openMVG开源项目 (https://github.com/openMVG/CameraSensorSizeDatabase)
+附件4：CIPA日本相机影像产品协会 (https://www.cipa.jp)
+附件5：佳能中国官方网站 (https://www.canon.com.cn)
+附件6：尼康在线手册 (https://onlinemanual.nikonimglib.com)
+附件7：CVF Open Access / ICCV 2025 (https://openaccess.thecvf.com)
+附件8：日本政府统计综合窗口e-Stat / 经济产业省生产动态统计 (https://www.e-stat.go.jp)
+
+================================================================
+本地已下载文件存放于：d:\Projects\构建难题\第2题\attachments\
+================================================================

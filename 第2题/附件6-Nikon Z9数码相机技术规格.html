@@ -1,0 +1,1720 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<!-- 6MO02715-07_H1708-07 -->
+<head>
+<meta charset="utf-8"><meta content="IE=edge" http-equiv="X-UA-Compatible"><meta content="width=device-width, initial-scale=1" name="viewport"><meta content="" name="description"><meta content="Nikon Corporation" name="author"><link href="favicon.ico" rel="icon"><title>技术规格</title><!-- Bootstrap core CSS --><link href="../css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css"><!-- Pure Drawer CSS --><link href="../css/pure-drawer.min.css" media="screen and (max-width: 991px)" rel="stylesheet" type="text/css"><!-- Custom styles for this template --><!-- <link href="css/z_master2018.css" media="all" rel="stylesheet" type="text/css" /> --><link href="css/master.css" media="all" rel="stylesheet" type="text/css"><link href="css/print.css" media="print" rel="stylesheet" type="text/css"><!-- Styles for this page --><link href="css/styles.css" media="all" rel="stylesheet" type="text/css"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --><!-- WARNING: Respond.js doesn't work if you view the page via file:// --><!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]--><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script type="text/javascript">
+$(function () {
+//.accordion1の中のp要素がクリックされたら
+$('.ac_btn').click(function () {
+//クリックされた.accordion1の中のp要素に隣接するul要素が開いたり閉じたりする。
+$(this).next('div').slideToggle();
+});
+});
+</script></head><body>
+<div class="pure-container" data-effect="pure-effect-push"><input class="pure-toggle hidden-md hidden-lg" data-toggle="right" id="pure-toggle-right" type="checkbox"><label class="pure-toggle-label hidden-md hidden-lg" data-toggle-label="right" for="pure-toggle-right"><span class="pure-toggle-icon"></span></label><div class="pure-pusher-container">
+<div class="pure-pusher">
+<!-- header css -->
+<style type="text/css">
+header {height: 108px; border-bottom: 1px solid #d4d4d4; margin-bottom: 1em; padding-top: 20px;}
+.header-logo {height: 68px; width: 68px; margin-right: 1em;}
+@media (max-width: 599px) {
+    header {height: 68px; padding-top: 15px;}
+    .header-logo {height: 40px; width: 40px; margin-right: 0.5em;}
+}
+header .select-lang {font-size: small; padding-top: 0.5em; position: relative; right: 72px;}
+@media (min-width: 868px) {
+	header .select-lang {right: 0;}
+}
+
+header .current-lang {display: none;}
+header .accordion_title {cursor: pointer;}
+header .accordion_title:hover {opacity: 0.8;}
+header .accordion_inner {display: none;}
+header .list-group {position: absolute; right: 0; width: 17em; z-index: 9999;}
+
+html[lang="ar"] header .current-lang-ar {display: block;}
+html[lang="ar"] header .list-group .lang-ar {z-index: 2; color: #fff; background-color: #337ab7; border-color: #337ab7;}
+html[lang="bg"] header .current-lang-bg {display: block;}
+html[lang="bg"] header .list-group .lang-bg {z-index: 2; color: #fff; background-color: #337ab7; border-color: #337ab7;}
+html[lang="da"] header .current-lang-da {display: block;}
+html[lang="da"] header .list-group .lang-da {z-index: 2; color: #fff; background-color: #337ab7; border-color: #337ab7;}
+html[lang="de"] header .current-lang-de {display: block;}
+html[lang="de"] header .list-group .lang-de {z-index: 2; color: #fff; background-color: #337ab7; border-color: #337ab7;}
+html[lang="el"] header .current-lang-el {display: block;}
+html[lang="el"] header .list-group .lang-el {z-index: 2; color: #fff; background-color: #337ab7; border-color: #337ab7;}
+html[lang="en"] header .current-lang-en {display: block;}
+html[lang="en"] header .list-group .lang-en {z-index: 2; color: #fff; background-color: #337ab7; border-color: #337ab7;}
+html[lang="es"] header .current-lang-es {display: block;}
+html[lang="es"] header .list-group .lang-es {z-index: 2; color: #fff; background-color: #337ab7; border-color: #337ab7;}
+html[lang="et"] header .current-lang-et {display: block;}
+html[lang="et"] header .list-group .lang-et {z-index: 2; color: #fff; background-color: #337ab7; border-color: #337ab7;}
+html[lang="fi"] header .current-lang-fi {display: block;}
+html[lang="fi"] header .list-group .lang-fi {z-index: 2; color: #fff; background-color: #337ab7; border-color: #337ab7;}
+html[lang="fr"] header .current-lang-fr {display: block;}
+html[lang="fr"] header .list-group .lang-fr {z-index: 2; color: #fff; background-color: #337ab7; border-color: #337ab7;}
+html[lang="hu"] header .current-lang-hu {display: block;}
+html[lang="hu"] header .list-group .lang-hu {z-index: 2; color: #fff; background-color: #337ab7; border-color: #337ab7;}
+html[lang="id"] header .current-lang-id {display: block;}
+html[lang="id"] header .list-group .lang-id {z-index: 2; color: #fff; background-color: #337ab7; border-color: #337ab7;}
+html[lang="it"] header .current-lang-it {display: block;}
+html[lang="it"] header .list-group .lang-it {z-index: 2; color: #fff; background-color: #337ab7; border-color: #337ab7;}
+html[lang="ja"] header .current-lang-ja {display: block;}
+html[lang="ja"] header .list-group .lang-ja {z-index: 2; color: #fff; background-color: #337ab7; border-color: #337ab7;}
+html[lang="kk"] header .current-lang-kk {display: block;}
+html[lang="kk"] header .list-group .lang-kk {z-index: 2; color: #fff; background-color: #337ab7; border-color: #337ab7;}
+html[lang="ko"] header .current-lang-ko {display: block;}
+html[lang="ko"] header .list-group .lang-ko {z-index: 2; color: #fff; background-color: #337ab7; border-color: #337ab7;}
+html[lang="lt"] header .current-lang-lt {display: block;}
+html[lang="lt"] header .list-group .lang-lt {z-index: 2; color: #fff; background-color: #337ab7; border-color: #337ab7;}
+html[lang="lv"] header .current-lang-lv {display: block;}
+html[lang="lv"] header .list-group .lang-lv {z-index: 2; color: #fff; background-color: #337ab7; border-color: #337ab7;}
+html[lang="nl"] header .current-lang-nl {display: block;}
+html[lang="nl"] header .list-group .lang-nl {z-index: 2; color: #fff; background-color: #337ab7; border-color: #337ab7;}
+html[lang="no"] header .current-lang-no {display: block;}
+html[lang="no"] header .list-group .lang-no {z-index: 2; color: #fff; background-color: #337ab7; border-color: #337ab7;}
+html[lang="pl"] header .current-lang-pl {display: block;}
+html[lang="pl"] header .list-group .lang-pl {z-index: 2; color: #fff; background-color: #337ab7; border-color: #337ab7;}
+html[lang="pt"] header .current-lang-pt {display: block;}
+html[lang="pt"] header .list-group .lang-pt {z-index: 2; color: #fff; background-color: #337ab7; border-color: #337ab7;}
+html[lang="ro"] header .current-lang-ro {display: block;}
+html[lang="ro"] header .list-group .lang-ro {z-index: 2; color: #fff; background-color: #337ab7; border-color: #337ab7;}
+html[lang="ru"] header .current-lang-ru {display: block;}
+html[lang="ru"] header .list-group .lang-ru {z-index: 2; color: #fff; background-color: #337ab7; border-color: #337ab7;}
+html[lang="sl"] header .current-lang-sl {display: block;}
+html[lang="sl"] header .list-group .lang-sl {z-index: 2; color: #fff; background-color: #337ab7; border-color: #337ab7;}
+html[lang="sr"] header .current-lang-sr {display: block;}
+html[lang="sr"] header .list-group .lang-sr {z-index: 2; color: #fff; background-color: #337ab7; border-color: #337ab7;}
+html[lang="sv"] header .current-lang-sv {display: block;}
+html[lang="sv"] header .list-group .lang-sv {z-index: 2; color: #fff; background-color: #337ab7; border-color: #337ab7;}
+html[lang="tr"] header .current-lang-tr {display: block;}
+html[lang="tr"] header .list-group .lang-tr {z-index: 2; color: #fff; background-color: #337ab7; border-color: #337ab7;}
+html[lang="zh-cn"] header .current-lang-zh-cn {display: block;}
+html[lang="zh-cn"] header .list-group .lang-zh-cn {z-index: 2; color: #fff; background-color: #337ab7; border-color: #337ab7;}
+html[id="prc"] header .list-group .lang-zh-cn {z-index: 1; color: #555; background-color: #fff; border: 1px solid #ddd;}
+html[id="prc"] header .list-group .lang-zh-cn:focus, html[id="prc"] header .list-group .lang-zh-cn:hover {background-color: #f5f5f5}
+html[id="prc"] header .list-group .lang-zh-cn-prc {z-index: 2; color: #fff; background-color: #337ab7; border-color: #337ab7;}
+html[lang="zh-tw"] header .current-lang-zh-tw {display: block;}
+html[lang="zh-tw"] header .list-group .lang-zh-tw {z-index: 2; color: #fff; background-color: #337ab7; border-color: #337ab7;}
+</style>
+<!-- /header css -->
+
+<!-- header js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".on").next().css("display", "block");
+	$(".accordion_title").click(function(){
+		$(this).next().slideToggle();
+		$(this).toggleClass("on");
+	});
+});
+</script>
+<!-- header /js -->
+
+<header id="page-top">
+<div class="container clearfix">
+<p class="pull-left"><a href="https://downloadcenter.nikonimglib.com/"><img src="/common/img/logo_01.png" alt="Nikon" class="header-logo va_bottom"></a></p>
+<div class="pull-right select-lang">
+<p class="text-right mb0 current-lang current-lang-ar">عربي</p>
+<p class="text-right mb0 current-lang current-lang-bg">Български</p>
+<p class="text-right mb0 current-lang current-lang-da">Dansk</p>
+<p class="text-right mb0 current-lang current-lang-de">Deutsch</p>
+<p class="text-right mb0 current-lang current-lang-el">Ελληνικά</p>
+<p class="text-right mb0 current-lang current-lang-en">English</p>
+<p class="text-right mb0 current-lang current-lang-es">Español</p>
+<p class="text-right mb0 current-lang current-lang-et">Eesti</p>
+<p class="text-right mb0 current-lang current-lang-fi">Suomi</p>
+<p class="text-right mb0 current-lang current-lang-fr">Français</p>
+<p class="text-right mb0 current-lang current-lang-hu">Magyar</p>
+<p class="text-right mb0 current-lang current-lang-id">Indonesia</p>
+<p class="text-right mb0 current-lang current-lang-it">Italiano</p>
+<p class="text-right mb0 current-lang current-lang-ja">日本語</p>
+<p class="text-right mb0 current-lang current-lang-kk">Қазақ</p>
+<p class="text-right mb0 current-lang current-lang-ko">한글</p>
+<p class="text-right mb0 current-lang current-lang-lt">Lietuvių</p>
+<p class="text-right mb0 current-lang current-lang-lv">Latviski</p>
+<p class="text-right mb0 current-lang current-lang-nl">Nederlands</p>
+<p class="text-right mb0 current-lang current-lang-no">Norsk</p>
+<p class="text-right mb0 current-lang current-lang-pl">Polski</p>
+<p class="text-right mb0 current-lang current-lang-pt">Português</p>
+<p class="text-right mb0 current-lang current-lang-ro">Română</p>
+<p class="text-right mb0 current-lang current-lang-ru">Русский</p>
+<p class="text-right mb0 current-lang current-lang-sl">Slovenščina</p>
+<!-- <p class="text-right mb0 current-lang current-lang-sr">Srpski</p> -->
+<p class="text-right mb0 current-lang current-lang-sr">Српски</p>
+<p class="text-right mb0 current-lang current-lang-sv">Svenska</p>
+<p class="text-right mb0 current-lang current-lang-tr">Türkçe</p>
+<p class="text-right mb0 current-lang current-lang-zh-cn">简体中文</p>
+<p class="text-right mb0 current-lang current-lang-zh-tw">繁體中文</p>
+<p class="accordion_title text-right"><span class="glyphicon glyphicon-globe"></span> Select language</p>
+<div class="list-group accordion_inner">
+<a href="../ar/" class="list-group-item lang-ar text-right">عربي</a>
+<a href="../bg/" class="list-group-item lang-bg">Български</a>
+<a href="../da/" class="list-group-item lang-da">Dansk</a>
+<a href="../de/" class="list-group-item lang-de">Deutsch</a>
+<a href="../el/" class="list-group-item lang-el">Ελληνικά</a>
+<a href="../en/" class="list-group-item lang-en">English</a>
+<a href="../es/" class="list-group-item lang-es">Español</a>
+<a href="../et/" class="list-group-item lang-et">Eesti</a>
+<a href="../fi/" class="list-group-item lang-fi">Suomi</a>
+<a href="../fr/" class="list-group-item lang-fr">Français</a>
+<a href="../hu/" class="list-group-item lang-hu">Magyar</a>
+<a href="../id/" class="list-group-item lang-id">Indonesia</a>
+<a href="../it/" class="list-group-item lang-it">Italiano</a>
+<a href="../ja/" class="list-group-item lang-ja">日本語</a>
+<a href="../kk/" class="list-group-item lang-kk">Қазақ</a>
+<a href="../ko/" class="list-group-item lang-ko">한글</a>
+<a href="../lt/" class="list-group-item lang-lt">Lietuvių</a>
+<a href="../lv/" class="list-group-item lang-lv">Latviski</a>
+<a href="../nl/" class="list-group-item lang-nl">Nederlands</a>
+<a href="../no/" class="list-group-item lang-no">Norsk</a>
+<a href="../pl/" class="list-group-item lang-pl">Polski</a>
+<a href="../pt/" class="list-group-item lang-pt">Português</a>
+<a href="../ro/" class="list-group-item lang-ro">Română</a>
+<a href="../ru/" class="list-group-item lang-ru">Русский</a>
+<a href="../sl/" class="list-group-item lang-sl">Slovenščina</a>
+<!-- <a href="../sr/" class="list-group-item lang-sr">Srpski</a> -->
+<a href="../sr/" class="list-group-item lang-sr">Српски</a>
+<a href="../sv/" class="list-group-item lang-sv">Svenska</a>
+<a href="../tr/" class="list-group-item lang-tr">Türkçe</a>
+<a href="../zh-cn-prc/" class="list-group-item lang-zh-cn-prc">简体中文（面向中国大陆用户）</a>
+<a href="../zh-cn/" class="list-group-item lang-zh-cn">简体中文（面向亚洲用户，不包括中国大陆用户）</a>
+<a href="../zh-tw/" class="list-group-item lang-zh-tw">繁體中文</a>
+</div>
+</div>
+</div>
+</header>
+<div class="container" role="main">
+<div class="row">
+<div class="col-md-4 hidden-xs hidden-sm">
+<nav class="toc"><p class="text-bold"><span class="glyphicon glyphicon-chevron-left"></span>&nbsp;<a href="index.html">Z&nbsp;9参考指南首页</a></p>
+
+<p class="search-title">搜索<em>参考指南</em></p>
+<div class="search-inner mb2em">
+<p class="text-bold mb0">关键词搜索</p>
+<p class="small"><span class="glyphicon glyphicon-question-sign"></span>&nbsp;请输入关键字，而不是句子。</p>
+<form id="commonSearch" role="search" name="commonSearch" action="search_result.html" method="get">
+<div class="input-group mb1em">
+<input type="text" class="form-control" placeholder="输入关键词" name="q" value="">
+<input type="hidden" value="0" name="offset">
+<span class="input-group-btn">
+<button class="btn btn-primary" type="submit" title="搜索"><img src="css/i_search_wt.svg" alt="" width="16px" height="16px"></button>
+</span>
+</div>
+</form>
+</div>
+
+<p class="toc_title">目录</p>
+
+<p class="toc_direct nav01_01"><a href="01_front_matter_01.html">想立即进行拍摄时</a></p>
+<p class="toc_direct nav02_01"><a href="01_front_matter_02.html">包装内物品</a></p>
+<p class="toc_direct nav03_01"><a href="01_front_matter_03.html">关于本使用说明</a></p>
+<p class="toc_direct nav04_01"><a href="01_front_matter_04.html">安全须知</a></p>
+<p class="toc_direct nav05_01"><a href="01_front_matter_05.html">声明</a></p>
+
+<p class="chapter_title nav06">开始了解照相机及其菜单</p>
+<ul>
+<li class="nav06_01"><a href="02_getting_to_know_the_camera_01.html">照相机部件</a></li>
+<li class="nav06_02"><a href="02_getting_to_know_the_camera_02.html">菜单</a></li>
+</ul>
+
+<p class="chapter_title nav07">开始步骤</p>
+<ul>
+<li class="nav07_01"><a href="03_first_step_01.html">安装挂带</a></li>
+<li class="nav07_02"><a href="03_first_step_02.html">电池充电</a></li>
+<li class="nav07_03"><a href="03_first_step_03.html">插入电池</a></li>
+<li class="nav07_04"><a href="03_first_step_04.html">插入存储卡</a></li>
+<li class="nav07_05"><a href="03_first_step_05.html">安装镜头</a></li>
+<li class="nav07_06"><a href="03_first_step_06.html">照相机设定</a></li>
+</ul>
+
+<p class="chapter_title nav08">基础拍摄与播放</p>
+<ul>
+<li class="nav08_01"><a href="04_basic_photography_and_playback_01.html">拍摄照片</a></li>
+<li class="nav08_02"><a href="04_basic_photography_and_playback_02.html">拍摄视频</a></li>
+<li class="nav08_03"><a href="04_basic_photography_and_playback_03.html">播放</a></li>
+</ul>
+
+<p class="chapter_title nav09">拍摄设定</p>
+<ul>
+<li class="nav09_01"><a href="05_shooting_settings_01.html">图像记录选项（图像区域、品质和尺寸）</a></li>
+<li class="nav09_02"><a href="05_shooting_settings_02.html">对焦</a></li>
+<li class="nav09_03"><a href="05_shooting_settings_03.html">曝光</a></li>
+<li class="nav09_04"><a href="05_shooting_settings_04.html">释放模式</a></li>
+<li class="nav09_05"><a href="05_shooting_settings_05.html">ISO感光度</a></li>
+<li class="nav09_06"><a href="05_shooting_settings_06.html">白平衡</a></li>
+<li class="nav09_07"><a href="05_shooting_settings_07.html">包围</a></li>
+<li class="nav09_08"><a href="05_shooting_settings_08.html">优化校准</a></li>
+<li class="nav09_09"><a href="05_shooting_settings_09.html">位置数据</a></li>
+<li class="nav09_10"><a href="05_shooting_settings_10.html">双键重设</a></li>
+</ul>
+
+<p class="chapter_title nav10">视频录制</p>
+<ul>
+<li class="nav10_01"><a href="06_video_recording_01.html">视频文件类型</a></li>
+<li class="nav10_02"><a href="06_video_recording_02.html">视频画面尺寸和帧频选项</a></li>
+<li class="nav10_03"><a href="06_video_recording_03.html">视频图像区域选项</a></li>
+<li class="nav10_04"><a href="06_video_recording_04.html">拍摄视频时的注意事项</a></li>
+<li class="nav10_05"><a href="06_video_recording_05.html">RAW视频</a></li>
+<li class="nav10_06"><a href="06_video_recording_06.html">录制HLG视频</a></li>
+<li class="nav10_07"><a href="06_video_recording_07.html">录制N‑Log视频</a></li>
+</ul>
+
+<p class="chapter_title nav11">查看和润饰照片</p>
+<ul>
+<li class="nav11_01"><a href="07_viewing_and_retouching_pictures_01.html">查看照片</a></li>
+<li class="nav11_02"><a href="07_viewing_and_retouching_pictures_02.html">照片信息</a></li>
+<li class="nav11_03"><a href="07_viewing_and_retouching_pictures_03.html"><span class="e__font name__ICN1_com">i</span>按钮（播放模式）</a></li>
+<li class="nav11_04"><a href="07_viewing_and_retouching_pictures_04.html">变焦播放</a></li>
+<li class="nav11_05"><a href="07_viewing_and_retouching_pictures_05.html">保护照片不被删除</a></li>
+<li class="nav11_06"><a href="07_viewing_and_retouching_pictures_06.html">为照片评级</a></li>
+<li class="nav11_07"><a href="07_viewing_and_retouching_pictures_07.html">选择照片以上传</a></li>
+<li class="nav11_08"><a href="07_viewing_and_retouching_pictures_08.html">筛选的播放</a></li>
+<li class="nav11_09"><a href="07_viewing_and_retouching_pictures_09.html">查看幻灯播放</a></li>
+<li class="nav11_10"><a href="07_viewing_and_retouching_pictures_10.html">删除照片</a></li>
+<li class="nav11_11"><a href="07_viewing_and_retouching_pictures_11.html">创建润饰后的副本</a></li>
+<li class="nav11_12"><a href="07_viewing_and_retouching_pictures_12.html">编辑视频</a></li>
+</ul>
+
+<p class="chapter_title nav12">语音留言</p>
+<ul>
+<li class="nav12_01"><a href="08_voice_memos_01.html">录制语音留言</a></li>
+<li class="nav12_02"><a href="08_voice_memos_02.html">播放语音留言</a></li>
+</ul>
+
+<p class="chapter_title nav13">连接至HDMI电视机和录制设备</p>
+<ul>
+<li class="nav13_01"><a href="09_connecting_to_hdmi_tvs_and_recorders_01.html">连接至HDMI设备</a></li>
+<li class="nav13_02"><a href="09_connecting_to_hdmi_tvs_and_recorders_02.html">电视机</a></li>
+<li class="nav13_03"><a href="09_connecting_to_hdmi_tvs_and_recorders_03.html">录制设备</a></li>
+</ul>
+
+<p class="chapter_title nav14">连接至智能设备</p>
+<ul>
+<li class="nav14_01"><a href="10_connecting_to_smart_devices_01.html">SnapBridge应用程序</a></li>
+<li class="nav14_02"><a href="10_connecting_to_smart_devices_02.html">无线连接</a></li>
+</ul>
+
+<p class="chapter_title nav15">连接至计算机或FTP服务器</p>
+<ul>
+<li class="nav15_01"><a href="11_connecting_to_computers_or_ftp_servers_01.html">建立连接</a></li>
+<li class="nav15_02"><a href="11_connecting_to_computers_or_ftp_servers_02.html">计算机：通过USB连接</a></li>
+<li class="nav15_03"><a href="11_connecting_to_computers_or_ftp_servers_03.html">计算机：通过以太网或无线局域网络连接</a></li>
+<li class="nav15_04"><a href="11_connecting_to_computers_or_ftp_servers_04.html">FTP服务器：通过以太网或无线局域网络连接</a></li>
+<li class="nav15_05"><a href="11_connecting_to_computers_or_ftp_servers_05.html">无线局域网络和以太网连接故障排除</a></li>
+</ul>
+
+<p class="chapter_title nav16">连接至其他照相机</p>
+<ul>
+<li class="nav16_01"><a href="12_connecting_to_other_cameras_01.html">照相机之间的连接有什么作用</a></li>
+<li class="nav16_02"><a href="12_connecting_to_other_cameras_02.html">同步释放</a></li>
+<li class="nav16_03"><a href="12_connecting_to_other_cameras_03.html">同步照相机时钟</a></li>
+</ul>
+
+<p class="chapter_title nav17">闪光拍摄</p>
+<ul>
+<li class="nav17_01"><a href="13_flash_photography_01.html">“连机”与“遥控”</a></li>
+<li class="nav17_02"><a href="13_flash_photography_02.html">使用连机闪光灯</a></li>
+<li class="nav17_03"><a href="13_flash_photography_03.html">闪光控制模式</a></li>
+<li class="nav17_04"><a href="13_flash_photography_04.html">闪光模式</a></li>
+<li class="nav17_05"><a href="13_flash_photography_05.html">闪光补偿</a></li>
+<li class="nav17_06"><a href="13_flash_photography_06.html">FV锁定</a></li>
+</ul>
+
+<p class="chapter_title nav18">遥控闪光拍摄</p>
+<ul>
+<li class="nav18_01"><a href="14_remote_flash_photography_01.html">什么是遥控闪光拍摄？</a></li>
+<li class="nav18_02"><a href="14_remote_flash_photography_02.html">无线电AWL</a></li>
+<li class="nav18_03"><a href="14_remote_flash_photography_03.html">光学AWL</a></li>
+</ul>
+
+<p class="chapter_title nav19">菜单指南</p>
+<ul>
+<li class="nav19_01"><a href="15_menu_guide_01.html">默认设定</a></li>
+<li class="nav19_02"><a href="15_menu_guide_02.html"><span class="e__font name__ICN2_com">C</span> 照片拍摄菜单：拍摄选项</a></li>
+<li class="nav19_03"><a href="15_menu_guide_03.html"><span class="e__font name__ICN3_com">1</span> 视频拍摄菜单：视频拍摄选项</a></li>
+<li class="nav19_04"><a href="15_menu_guide_04.html"><span class="e__font name__ICN2_com">A</span> 自定义设定：微调照相机设定</a></li>
+<li class="nav19_05"><a href="15_menu_guide_05.html"><span class="e__font name__ICN2_com">D</span> 播放菜单：管理照片</a></li>
+<li class="nav19_06"><a href="15_menu_guide_06.html"><span class="e__font name__ICN2_com">B</span> 设定菜单：照相机设定</a></li>
+<li class="nav19_07"><a href="15_menu_guide_07.html"><span class="e__font name__ICN2_com">F</span> 网络菜单：网络连接</a></li>
+<li class="nav19_08"><a href="15_menu_guide_08.html"><span class="e__font name__ICN2_com">O</span> 我的菜单/<span class="e__font name__ICN3_com">m</span> 最近的设定</a></li>
+</ul>
+
+<p class="chapter_title nav20">故障排除</p>
+<ul>
+<li class="nav20_01"><a href="16_troubleshooting_01.html">联系客户支持前</a></li>
+<li class="nav20_02"><a href="16_troubleshooting_02.html">问题和解决方法</a></li>
+<li class="nav20_03"><a href="16_troubleshooting_03.html">提醒与错误信息</a></li>
+</ul>
+
+<p class="chapter_title nav21">技术注释</p>
+<ul>
+<li class="nav21_01"><a href="17_technical_notes_01.html">兼容的镜头和配件</a></li>
+<li class="nav21_02"><a href="17_technical_notes_02.html">照相机显示</a></li>
+<li class="nav21_03"><a href="17_technical_notes_03.html">兼容的闪光灯组件</a></li>
+<li class="nav21_04"><a href="17_technical_notes_04.html">兼容的配件</a></li>
+<li class="nav21_05"><a href="17_technical_notes_05.html">软件</a></li>
+<li class="nav21_06"><a href="17_technical_notes_06.html">照相机的保养</a></li>
+<li class="nav21_07"><a href="17_technical_notes_07.html">照相机和电池的保养：注意事项</a></li>
+<li class="nav21_08"><a href="17_technical_notes_08.html">技术规格</a></li>
+<li class="nav21_09"><a href="17_technical_notes_09.html">经认可的存储卡</a></li>
+<li class="nav21_10"><a href="17_technical_notes_10.html">存储卡容量</a></li>
+<li class="nav21_11"><a href="17_technical_notes_11.html">电池持久力</a></li>
+<li class="nav21_12"><a href="17_technical_notes_12.html">商标和许可证</a></li>
+<li class="nav21_13"><a href="17_technical_notes_13.html">注意事项：位置数据（GPS/GLONASS）</a></li>
+<li class="nav21_14"><a href="17_technical_notes_15.html">蓝牙和Wi‑Fi（无线局域网络）</a></li>
+</ul>
+
+<p class="chapter_title nav22">“C”固件3.00版的变更</p>
+<ul>
+<li class="nav22_01"><a href="18_added_functions_300_01.html">“C”固件3.00版所提供的功能</a></li>
+<li class="nav22_02"><a href="18_added_functions_300_02.html">“C”固件3.00版所作的变更</a></li>
+<li class="nav22_03"><a href="18_added_functions_300_03.html">新的仅限DX的图像尺寸选项</a></li>
+<li class="nav22_04"><a href="18_added_functions_300_04.html">新的高速画面捕捉选项：C60</a></li>
+<li class="nav22_05"><a href="18_added_functions_300_05.html">新的菜单项目：“高频闪烁消减”</a></li>
+<li class="nav22_06"><a href="18_added_functions_300_06.html">新的“焦距变化拍摄”选项: “对焦位置自动重设”</a></li>
+<li class="nav22_07"><a href="18_added_functions_300_07.html">新的视频录制功能：高分辨率数字变焦</a></li>
+<li class="nav22_08"><a href="18_added_functions_300_08.html">新的“时间码”选项：“使用遥控重设”</a></li>
+<li class="nav22_09"><a href="18_added_functions_300_09.html">“优先考虑取景器”显示屏模式</a></li>
+<li class="nav22_10"><a href="18_added_functions_300_10.html">新的“对焦点显示”选项：“3D跟踪对焦点颜色”</a></li>
+<li class="nav22_11"><a href="18_added_functions_300_11.html">用于闪光拍摄的新查看模式选项</a></li>
+<li class="nav22_12"><a href="18_added_functions_300_12.html">新的显示屏亮度选项</a></li>
+<li class="nav22_13"><a href="18_added_functions_300_13.html">竖直方向播放</a></li>
+<li class="nav22_14"><a href="18_added_functions_300_14.html">用于以“手动预设”白平衡所拍摄照片的新色温显示</a></li>
+<li class="nav22_15"><a href="18_added_functions_300_15.html">按组处理连拍</a></li>
+<li class="nav22_16"><a href="18_added_functions_300_16.html">新的播放显示选项：“文件信息”</a></li>
+<li class="nav22_17"><a href="18_added_functions_300_17.html">新的释放定时指示选项：“Type A自动还原延迟”</a></li>
+<li class="nav22_18"><a href="18_added_functions_300_18.html">用于中央重点测光的新显示选项</a></li>
+<li class="nav22_19"><a href="18_added_functions_300_19.html">自定义设定f2“自定义控制（拍摄）”和g2“自定义控制”的新选项</a></li>
+<li class="nav22_20"><a href="18_added_functions_300_20.html">自定义设定f3“自定义控制（播放）”的新选项</a></li>
+<li class="nav22_21"><a href="18_added_functions_300_21.html">用于CFexpress存储卡的新“完全格式化”选项</a></li>
+<li class="nav22_22"><a href="18_added_functions_300_22.html">新的FTP连接指示</a></li>
+<li class="nav22_23"><a href="18_added_functions_300_23.html">支持FTPS</a></li>
+<li class="nav22_24"><a href="18_added_functions_300_24.html">新的遥控照相机计数显示</a></li>
+<li class="nav22_25"><a href="18_added_functions_300_25.html">新的“ATOMOS AirGlu BT选项”项目</a></li>
+<li class="nav22_26"><a href="18_added_functions_300_26.html">“C”固件3.00版的菜单项目和默认值</a></li>
+<li class="nav22_27"><a href="18_added_functions_300_27.html">“C”固件3.00版的升级后规格</a></li>
+</ul>
+</nav></div>
+<div class="col-xs-12 col-md-8"><button class="btn btn-primary pull-right print" type="button"><span class="glyphicon glyphicon-print"></span></button><ol class="breadcrumb">
+<li><a href="/portal/zh-cn/"><span class="glyphicon glyphicon-home"></span></a></li>
+<li><a href="index.html">Z&nbsp;9参考指南</a></li>
+<li><a href="17_technical_notes_00.html">技术注释</a></li><li class="active">技术规格</li></ol><div class="page-header"><h1 id="specifications">技术规格</h1></div><div class="e__section">
+<div class="e__topic">
+<h2 class="e__title" id="nikon_digital_camera">尼康Z 9数码照相机</h2>
+<div class="e__body">
+<div class="e__table column__full">
+<table class="e__tgroup tabletype__10_00100_Table_FrameAll"><colgroup><col class="e__colspec" width="22.6%"><col class="e__colspec" width="77.3%"></colgroup><thead class="e__thead"><tr class="e__row"><th class="e__entry" colspan="2" align="left">
+<p class="e__p">类型</p>
+</th>
+</tr></thead><tbody class="e__tbody"><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">类型</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">可换镜头微型单电数码相机</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">镜头卡口</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">尼康Z卡口</p>
+</td>
+</tr></tbody></table></div>
+<div class="e__table column__full">
+<table class="e__tgroup tabletype__10_00100_Table_FrameAll"><colgroup><col class="e__colspec" width="22.6%"><col class="e__colspec" width="77.3%"></colgroup><thead class="e__thead"><tr class="e__row"><th class="e__entry" colspan="2" align="left">
+<p class="e__p">镜头</p>
+</th>
+</tr></thead><tbody class="e__tbody"><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">兼容的镜头</b></p>
+</td>
+<td class="e__entry">
+<ul class="e__table_list1"><li class="e__table_list1item">
+<p class="e__listtxt">Z卡口尼克尔镜头</p>
+</li>
+<li class="e__table_list1item">
+<p class="e__listtxt">F卡口尼克尔镜头（需要卡口适配器；部分功能可能受到限制）</p>
+</li>
+</ul></td>
+</tr></tbody></table></div>
+<div class="e__table column__full">
+<table class="e__tgroup tabletype__10_00100_Table_FrameAll"><colgroup><col class="e__colspec" width="22.6%"><col class="e__colspec" width="77.3%"></colgroup><thead class="e__thead"><tr class="e__row"><th class="e__entry" colspan="2" align="left">
+<p class="e__p">有效像素数</p>
+</th>
+</tr></thead><tbody class="e__tbody"><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">有效像素数</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">4571万</p>
+</td>
+</tr></tbody></table></div>
+<div class="e__table column__full">
+<table class="e__tgroup tabletype__10_00100_Table_FrameAll"><colgroup><col class="e__colspec" width="22.6%"><col class="e__colspec" width="77.3%"></colgroup><thead class="e__thead"><tr class="e__row"><th class="e__entry" colspan="2" align="left">
+<p class="e__p">影像传感器</p>
+</th>
+</tr></thead><tbody class="e__tbody"><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b"></b><b class="e__b">类型</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">35.9×23.9mm CMOS（互补性金属氧化物半导体器件）传感器（尼康FX格式）</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">总像素数</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">5237万</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">除尘系统</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">清洁影像传感器、图像除尘参考数据（需要尼康工坊）</p>
+</td>
+</tr></tbody></table></div>
+<div class="e__table column__full page__page">
+<table class="e__tgroup tabletype__10_00100_Table_FrameAll"><colgroup><col class="e__colspec" width="22.6%"><col class="e__colspec" width="77.3%"></colgroup><thead class="e__thead"><tr class="e__row"><th class="e__entry" colspan="2" align="left">
+<p class="e__p">存储</p>
+</th>
+</tr></thead><tbody class="e__tbody"><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">图像尺寸（像素）</b></p>
+</td>
+<td class="e__entry">
+<ul class="e__table_list1"><li class="e__table_list1item">
+<p class="e__listtxt"><b class="e__b">图像区域选为[<span class="e__camera_menu">FX（36 × 24）</span>]</b>：</p>
+<ul class="e__table_list2"><li class="e__table_list2item">
+<p class="e__listtxt">8256×5504（大：45.4M）</p>
+</li>
+<li class="e__table_list2item">
+<p class="e__listtxt">6192×4128（中：25.6M）</p>
+</li>
+<li class="e__table_list2item">
+<p class="e__listtxt">4128×2752（小：11.4M）</p>
+</li>
+</ul></li>
+<li class="e__table_list1item">
+<p class="e__listtxt"><b class="e__b">图像区域选为[<span class="e__camera_menu">DX（24 × 16）</span>]</b>：</p>
+<ul class="e__table_list2"><li class="e__table_list2item">
+<p class="e__listtxt">5392×3592（大：19.4M）</p>
+</li>
+<li class="e__table_list2item">
+<p class="e__listtxt">4032×2688（中：10.8M）</p>
+</li>
+<li class="e__table_list2item">
+<p class="e__listtxt">2688×1792（小：4.8M）</p>
+</li>
+</ul></li>
+<li class="e__table_list1item">
+<p class="e__listtxt"><b class="e__b">图像区域选为[<span class="e__camera_menu">1:1（24 × 24）</span>]</b>：</p>
+<ul class="e__table_list2"><li class="e__table_list2item">
+<p class="e__listtxt">5504×5504（大：30.3M）</p>
+</li>
+<li class="e__table_list2item">
+<p class="e__listtxt">4128×4128（中：17.0M）</p>
+</li>
+<li class="e__table_list2item">
+<p class="e__listtxt">2752×2752（小：7.6M）</p>
+</li>
+</ul></li>
+<li class="e__table_list1item">
+<p class="e__listtxt"><b class="e__b">图像区域选为[<span class="e__camera_menu">16:9（36 × 20）</span>]</b>：</p>
+<ul class="e__table_list2"><li class="e__table_list2item">
+<p class="e__listtxt">8256×4640（大：38.3M）</p>
+</li>
+<li class="e__table_list2item">
+<p class="e__listtxt">6192×3480（中：21.5M）</p>
+</li>
+<li class="e__table_list2item">
+<p class="e__listtxt">4128×2320（小：9.6M）</p>
+</li>
+</ul></li>
+</ul></td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">文件格式（图像品质）</b></p>
+</td>
+<td class="e__entry">
+<ul class="e__table_list1"><li class="e__table_list1item">
+<p class="e__listtxt"><b class="e__b">NEF（RAW）</b>：14位；从无损压缩、高效率<span class="e__font name__ICN5_com">m</span>或高效率选项中进行选择</p>
+</li>
+<li class="e__table_list1item">
+<p class="e__listtxt"><b class="e__b">JPEG</b>：兼容JPEG-Baseline，压缩比（约）为精细（1:4）、标准（1:8）或基本（1:16）；文件大小优先和良好品质压缩可用</p>
+</li>
+<li class="e__table_list1item">
+<p class="e__listtxt"><b class="e__b">NEF（RAW）+JPEG</b>：以NEF（RAW）和JPEG两种格式记录单张照片</p>
+</li>
+</ul></td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">优化校准系统</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">自动、标准、自然、鲜艳、单色、人像、风景、平面、Creative Picture Control（创意优化校准；梦幻、清晨、流行、星期天、低沉、戏剧、静寂、漂白、忧郁、纯净、牛仔布、玩具、棕褐色、蓝色、红色、粉色、木炭、石墨、双色、黑碳）；可修改所选优化校准；可保存自定义优化校准</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">存储介质</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">CFexpress（B型）和XQD存储卡</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">双存储卡插槽</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">插槽2中的卡可用作额外空间或备份存储空间，用于分开存储NEF（RAW）和JPEG照片，或用于以不同尺寸和图像品质存储重复的JPEG照片；照片可在两张卡之间进行复制。</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">文件系统</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">DCF 2.0、Exif 2.32</p>
+</td>
+</tr></tbody></table></div>
+<div class="e__table column__full">
+<table class="e__tgroup tabletype__10_00100_Table_FrameAll"><colgroup><col class="e__colspec" width="22.6%"><col class="e__colspec" width="77.3%"></colgroup><thead class="e__thead"><tr class="e__row"><th class="e__entry" colspan="2" align="left">
+<p class="e__p">取景器</p>
+</th>
+</tr></thead><tbody class="e__tbody"><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">取景器</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">1.27cm/0.5英寸、约369万画点（Quad VGA）OLED电子取景器，可调整色彩平衡，具备自动以及18个级别的手动亮度控制；提供了高帧频显示</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">画面覆盖率</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">约100%（垂直与水平）</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">放大倍率</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">约0.8倍（50mm镜头设为无穷远；屈光度为−1.0m<sup class="e__sup">−1</sup>）</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">视点</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">距离取景器接目镜最后表面23 mm（屈光度为−1.0m<sup class="e__sup">−1</sup>）</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">屈光度调节</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">−4至+3m<sup class="e__sup">−1</sup></p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">眼感应</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">在显示屏和取景器显示之间自动切换</p>
+</td>
+</tr></tbody></table></div>
+<div class="e__table column__full">
+<table class="e__tgroup tabletype__10_00100_Table_FrameAll"><colgroup><col class="e__colspec" width="22.6%"><col class="e__colspec" width="77.3%"></colgroup><thead class="e__thead"><tr class="e__row"><th class="e__entry" colspan="2" align="left">
+<p class="e__p">显示屏</p>
+</th>
+</tr></thead><tbody class="e__tbody"><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">显示屏</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">8cm/3.2英寸、约210万画点、170°可视角度、约100%画面覆盖率的垂直和水平可翻折TFT触摸感应LCD显示屏，可调整色彩平衡，具备11个级别的手动亮度控制</p>
+</td>
+</tr></tbody></table></div>
+<div class="e__table column__full page__page">
+<table class="e__tgroup tabletype__10_00100_Table_FrameAll"><colgroup><col class="e__colspec" width="22.6%"><col class="e__colspec" width="77.3%"></colgroup><thead class="e__thead"><tr class="e__row"><th class="e__entry" colspan="2" align="left">
+<p class="e__p">快门</p>
+</th>
+</tr></thead><tbody class="e__tbody"><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">类型</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">电子快门，带有快门音和传感器罩板</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">速度</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p"><sup class="e__sup">1</sup>/<sub class="e__sub">32000</sub>−30秒（从<sup class="e__sup">1</sup>/<sub class="e__sub">3</sub>、<sup class="e__sup">1</sup>/<sub class="e__sub">2</sub>和1EV中选择步长，在模式<b class="e__b">M</b>下可延长至900秒）、B门、遥控B门</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">闪光同步速度</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">闪光同步，快门速度为<sup class="e__sup">1</sup>/<sub class="e__sub">250</sub>或<sup class="e__sup">1</sup>/<sub class="e__sub">200</sub>秒或更慢（但是请注意，速度为<sup class="e__sup">1</sup>/<sub class="e__sub">200</sub>至<sup class="e__sup">1</sup>/<sub class="e__sub">250</sub>秒时指数会下降）；自动FP高速同步支持最高达<sup class="e__sup">1</sup>/<sub class="e__sub">8000</sub>秒的同步速度</p>
+</td>
+</tr></tbody></table></div>
+<div class="e__table column__full">
+<table class="e__tgroup tabletype__10_00100_Table_FrameAll"><colgroup><col class="e__colspec" width="22.6%"><col class="e__colspec" width="77.3%"></colgroup><thead class="e__thead"><tr class="e__row"><th class="e__entry" colspan="2" align="left">
+<p class="e__p">释放</p>
+</th>
+</tr></thead><tbody class="e__tbody"><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">释放模式</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">单张拍摄、低速连拍、高速连拍、高速画面捕捉（带预拍）、自拍</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">每秒幅数（近似值）</b></p>
+</td>
+<td class="e__entry">
+<ul class="e__table_list1"><li class="e__table_list1item">
+<p class="e__listtxt"><b class="e__b">低速连拍</b>：约1−10fps</p>
+</li>
+<li class="e__table_list1item">
+<p class="e__listtxt"><b class="e__b">高速连拍</b>：约10−20fps</p>
+</li>
+<li class="e__table_list1item">
+<p class="e__listtxt"><b class="e__b">高速画面捕捉（C30）</b>：约30fps</p>
+</li>
+<li class="e__table_list1item">
+<p class="e__listtxt"><b class="e__b">高速画面捕捉（C120）</b>：约120fps</p>
+</li>
+</ul><ul class="e__footnote"><li class="e__footnote_item">
+<p class="e__footnotetxt">内部测试测量的最高每秒幅数。</p>
+</li>
+</ul></td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">自拍</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">2秒、5秒、10秒、20秒；以0.5、1、2或3秒为间隔曝光1−9次</p>
+</td>
+</tr></tbody></table></div>
+<div class="e__table column__full">
+<table class="e__tgroup tabletype__10_00100_Table_FrameAll"><colgroup><col class="e__colspec" width="23.7%"><col class="e__colspec" width="76.2%"></colgroup><thead class="e__thead"><tr class="e__row"><th class="e__entry" colspan="2" align="left">
+<p class="e__p">曝光</p>
+</th>
+</tr></thead><tbody class="e__tbody"><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">测光系统</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">使用照相机影像传感器进行TTL测光</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">测光模式</b></p>
+</td>
+<td class="e__entry">
+<ul class="e__table_list1"><li class="e__table_list1item">
+<p class="e__listtxt"><b class="e__b">矩阵测光</b></p>
+</li>
+<li class="e__table_list1item">
+<p class="e__listtxt"><b class="e__b">中央重点测光</b>：约75%的比重集中在画面中央12或8mm直径圈中或比重可基于整个画面的平均值</p>
+</li>
+<li class="e__table_list1item">
+<p class="e__listtxt"><b class="e__b">点测光</b>：对以所选对焦点为中心的约4mm直径圈进行测光</p>
+</li>
+<li class="e__table_list1item">
+<p class="e__listtxt"><b class="e__b">亮部重点测光</b></p>
+</li>
+</ul></td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">范围</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">−3至+17EV</p>
+<ul class="e__footnote"><li class="e__footnote_item">
+<p class="e__footnotetxt">数据是在20℃时使用ISO 100和f/2.0镜头所获取的</p>
+</li>
+</ul></td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">模式</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p"><b class="e__b">P</b>：带有柔性程序的程序自动；<b class="e__b">S</b>：快门优先自动；<b class="e__b">A</b>：光圈优先自动；<b class="e__b">M</b>：手动</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">曝光补偿</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">−5至+5EV（从<sup class="e__sup">1</sup>/<sub class="e__sub">3</sub>和<sup class="e__sup">1</sup>/<sub class="e__sub">2</sub>EV中选择步长）</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">曝光锁定</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">光亮度锁定在所测定的值上</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">ISO感光度（推荐曝光指数）</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">ISO 64至25600（从<sup class="e__sup">1</sup>/<sub class="e__sub">3</sub>和1EV中选择步长）；还可设为比ISO 64低大约0.3、0.7或1EV（相当于ISO 32），或比ISO 25600高大约0.3、0.7、1或2EV（相当于ISO
+102400）；提供ISO感光度自动控制</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">动态D-Lighting</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">自动、高+2、高+1、高、标准、低和关闭</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">多重曝光</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">叠加、平均、亮化、暗化</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">其他选项</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">HDR合成、照片模式闪烁消减、高频闪烁消减</p>
+</td>
+</tr></tbody></table></div>
+<div class="e__table column__full">
+<table class="e__tgroup tabletype__10_00100_Table_FrameAll"><colgroup><col class="e__colspec" width="23.7%"><col class="e__colspec" width="76.2%"></colgroup><thead class="e__thead"><tr class="e__row"><th class="e__entry" colspan="2" align="left">
+<p class="e__p">自动对焦</p>
+</th>
+</tr></thead><tbody class="e__tbody"><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">类型</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">复合自动对焦（相位侦测AF/对比AF），具备AF辅助</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">侦测范围</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">−7至+19EV（星光视图时−9至+19EV）</p>
+<ul class="e__footnote"><li class="e__footnote_item">
+<p class="e__footnotetxt">测量条件：照片模式、ISO 100、20℃、单次伺服AF（<b class="e__b">AF‑S</b>），使用最大光圈为f/1.2的镜头</p>
+</li>
+</ul></td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">镜头伺服</b></p>
+</td>
+<td class="e__entry">
+<ul class="e__table_list1"><li class="e__table_list1item">
+<p class="e__listtxt"><b class="e__b">自动对焦（AF）</b>：单次伺服AF（<b class="e__b">AF‑S</b>）；连续伺服AF（<b class="e__b">AF‑C</b>）；全时AF（<b class="e__b">AF‑F</b>；仅在视频模式下可用）；预测对焦跟踪</p>
+</li>
+<li class="e__table_list1item">
+<p class="e__listtxt"><b class="e__b">手动对焦（M）</b>：可以使用电子测距仪</p>
+</li>
+</ul></td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">对焦点</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">493个对焦点</p>
+<ul class="e__footnote"><li class="e__footnote_item">
+<p class="e__footnotetxt">AF区域模式选为单点AF且图像区域选为FX时在照片模式下可用的对焦点数量</p>
+</li>
+</ul></td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">AF区域模式</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">微点（仅在照片模式下可用）、单点、动态区域（S、M和L；仅在照片模式下可用）、宽区域（S、L、C1和C2）和自动区域AF；3D跟踪（仅在照片模式下可用）；对象跟踪AF（仅在视频模式下可用）</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">对焦锁定</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">半按快门释放按钮（单次伺服AF/<b class="e__b">AF‑S</b>）或按下副选择器的中央可锁定对焦</p>
+</td>
+</tr></tbody></table></div>
+<div class="e__table column__full">
+<table class="e__tgroup tabletype__10_00100_Table_FrameAll"><colgroup><col class="e__colspec" width="22.6%"><col class="e__colspec" width="77.3%"></colgroup><thead class="e__thead"><tr class="e__row"><th class="e__entry" colspan="2" align="left">
+<p class="e__p">减震（VR）</p>
+</th>
+</tr></thead><tbody class="e__tbody"><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">照相机机载VR</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">5轴影像传感器位移</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">镜头VR</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">镜头位移（适用于VR镜头）</p>
+</td>
+</tr></tbody></table></div>
+<div class="e__table column__full">
+<table class="e__tgroup tabletype__10_00100_Table_FrameAll"><colgroup><col class="e__colspec" width="22.6%"><col class="e__colspec" width="77.3%"></colgroup><thead class="e__thead"><tr class="e__row"><th class="e__entry" colspan="2" align="left">
+<p class="e__p">闪光灯</p>
+</th>
+</tr></thead><tbody class="e__tbody"><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">闪光控制</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p"><b class="e__b">TTL</b>：i-TTL闪光控制；i-TTL均衡补充闪光配合矩阵测光、中央重点测光、亮部重点测光一起使用，标准i-TTL补充闪光则配合点测光一起使用</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">闪光模式</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">前帘同步、慢同步、后帘同步、防红眼、防红眼带慢同步、关闭</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">闪光补偿</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">−3至+1EV（从<sup class="e__sup">1</sup>/<sub class="e__sub">3</sub>和<sup class="e__sup">1</sup>/<sub class="e__sub">2</sub>EV中选择步长）</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">闪光预备指示灯</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">当另购的闪光灯组件充满电时点亮；当闪光灯以全光输出后闪烁，用作曝光不足警告</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">配件热靴</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">带有安全锁及同步和数据接点的ISO 518热靴</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">尼康创意闪光系统（CLS）</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">i-TTL闪光控制、无线电控制无线闪光、光学无线闪光、模拟照明、FV锁定、色彩信息交流、自动FP高速同步以及统一闪光控制</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">同步端子</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">带有锁定螺纹的ISO 519同步端子</p>
+</td>
+</tr></tbody></table></div>
+<div class="e__table column__full">
+<table class="e__tgroup tabletype__10_00100_Table_FrameAll"><colgroup><col class="e__colspec" width="22.6%"><col class="e__colspec" width="77.3%"></colgroup><thead class="e__thead"><tr class="e__row"><th class="e__entry" colspan="2" align="left">
+<p class="e__p">白平衡</p>
+</th>
+</tr></thead><tbody class="e__tbody"><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">白平衡</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">自动（3种类型）、自然光自动适应、晴天、阴天、背阴、白炽灯、荧光灯（3种类型）、闪光灯、选择色温（2500−10000K）、手动预设（最多可存储6个值），均可进行微调</p>
+</td>
+</tr></tbody></table></div>
+<div class="e__table column__full">
+<table class="e__tgroup tabletype__10_00100_Table_FrameAll"><colgroup><col class="e__colspec" width="22.6%"><col class="e__colspec" width="77.3%"></colgroup><thead class="e__thead"><tr class="e__row"><th class="e__entry" colspan="2" align="left">
+<p class="e__p">包围</p>
+</th>
+</tr></thead><tbody class="e__tbody"><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">包围</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">曝光和/或闪光、白平衡和动态D‑Lighting</p>
+</td>
+</tr></tbody></table></div>
+<div class="e__table column__full">
+<table class="e__tgroup tabletype__10_00100_Table_FrameAll"><colgroup><col class="e__colspec" width="23.7%"><col class="e__colspec" width="76.2%"></colgroup><thead class="e__thead"><tr class="e__row"><th class="e__entry" colspan="2" align="left">
+<p class="e__p">视频</p>
+</th>
+</tr></thead><tbody class="e__tbody"><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">测光系统</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">使用照相机影像传感器进行TTL测光</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">测光模式</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">矩阵测光、中央重点测光或亮部重点测光</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">画面尺寸（像素）和帧频</b></p>
+</td>
+<td class="e__entry">
+<ul class="e__table_list1"><li class="e__table_list1item">
+<p class="e__listtxt">7680×4320（8K UHD）：30p（逐行）/25p/24p</p>
+</li>
+<li class="e__table_list1item">
+<p class="e__listtxt">3840×2160（4K UHD）：120p/100p/60p/50p/30p/25p/24p</p>
+</li>
+<li class="e__table_list1item">
+<p class="e__listtxt">1920×1080：120p/100p/60p/50p/30p/25p/24p</p>
+</li>
+</ul><ul class="e__footnote"><li class="e__footnote_item">
+<p class="e__footnotetxt">120p、100p、60p、50p、30p、25p及24p的实际帧频分别为119.88、100、59.94、50、29.97、25及23.976fps</p>
+</li>
+</ul></td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">画面尺寸（像素）和帧频（RAW视频）</b></p>
+</td>
+<td class="e__entry">
+<ul class="e__table_list1"><li class="e__table_list1item">
+<p class="e__listtxt">8256×4644：60p/50p/30p/25p/24p</p>
+</li>
+<li class="e__table_list1item">
+<p class="e__listtxt">5392×3032：60p/50p/30p/25p/24p</p>
+</li>
+<li class="e__table_list1item">
+<p class="e__listtxt">4128×2322：120p/100p/60p/50p/30p/25p/24p</p>
+</li>
+<li class="e__table_list1item">
+<p class="e__listtxt">3840×2160：120p/100p/60p/50p</p>
+</li>
+</ul><ul class="e__footnote"><li class="e__footnote_item">
+<p class="e__footnotetxt">120p、100p、60p、50p、30p、25p及24p的实际帧频分别为119.88、100、59.94、50、29.97、25及23.976fps</p>
+</li>
+</ul></td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">文件格式</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">NEV、MOV、MP4</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">视频压缩</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">N-RAW（12位）、Apple ProRes RAW HQ（12位）、Apple ProRes 422 HQ（10位）、H.265/HEVC（8位/10位）、H.264/AVC（8位）</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">音频录制格式</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">线性PCM（48KHz，24位，用于以NEV或MOV格式录制的视频）或AAC（48KHz，16位，用于以MP4格式录制的视频）</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">音频录制设备</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">带衰减器选项的内置立体声或外置麦克风；可调节灵敏度</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">曝光补偿</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">−3至+3EV（从<sup class="e__sup">1</sup>/<sub class="e__sub">3</sub>和<sup class="e__sup">1</sup>/<sub class="e__sub">2</sub>EV中选择步长）</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">ISO感光度（推荐曝光指数）</b></p>
+</td>
+<td class="e__entry">
+<ul class="e__table_list1"><li class="e__table_list1item">
+<p class="e__listtxt"><b class="e__b">模式M</b>：手动选择（ISO 64–25600；从<sup class="e__sup">1</sup>/<sub class="e__sub">6</sub>、<sup class="e__sup">1</sup>/<sub class="e__sub">3</sub>和1EV中选择步长）；可在ISO 25600的基础上约增加0.3、0.7、1或2EV（相当于ISO 102400）；ISO感光度自动控制（ISO 64–Hi 2.0），可选择上限</p>
+</li>
+<li class="e__table_list1item">
+<p class="e__listtxt"><b class="e__b">模式P、S、A</b>：ISO感光度自动控制（ISO 64–Hi 2.0），可选择上限</p>
+</li>
+</ul></td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">动态D-Lighting</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">高+、高、标准、低、关闭</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">其他选项</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">延时摄影视频录制、电子减震、时间码、N-Log和HDR（HLG）视频、波形显示、红色REC画面指示器、视频录制显示缩放（50%、100%和200%）、扩展快门速度范围（<b class="e__b">M</b>模式）、以及RAW视频的双格式（代理视频）录制；扩展过采样可用；可通过<span class="e__font name__ICN1_com">i</span>菜单查看视频录制信息的选项</p>
+</td>
+</tr></tbody></table></div>
+<div class="e__table column__full page__page">
+<table class="e__tgroup tabletype__10_00100_Table_FrameAll"><colgroup><col class="e__colspec" width="22.6%"><col class="e__colspec" width="77.3%"></colgroup><thead class="e__thead"><tr class="e__row"><th class="e__entry" colspan="2" align="left">
+<p class="e__p">播放</p>
+</th>
+</tr></thead><tbody class="e__tbody"><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">播放</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">全屏和缩略图（最多4张、9张或72张照片）播放、变焦播放、变焦播放裁切、视频播放、幻灯播放、直方图显示、加亮显示、照片信息、位置数据显示、自动旋转照片、照片评级、语音留言录制和播放、IPTC信息的嵌入和显示、筛选的播放、跳转至连拍的首张照片、保存连续帧以及动作混合</p>
+</td>
+</tr></tbody></table></div>
+<div class="e__table column__full">
+<table class="e__tgroup tabletype__10_00100_Table_FrameAll"><colgroup><col class="e__colspec" width="22.6%"><col class="e__colspec" width="77.3%"></colgroup><thead class="e__thead"><tr class="e__row"><th class="e__entry" colspan="2" align="left">
+<p class="e__p">接口</p>
+</th>
+</tr></thead><tbody class="e__tbody"><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">USB</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">C型USB接口（SuperSpeed USB）；建议连接至内置USB端口</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">HDMI输出</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">A型HDMI接口</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">音频输入</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">立体声迷你针式插孔（3.5mm直径；支持插入式电源）</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">音频输出</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">立体声迷你针式插孔（3.5mm直径）</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">10针遥控端子</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">内置（可用于MC‑30A/MC‑36A遥控线和其他另购的配件）</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">以太网</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">RJ-45接口</p>
+<ul class="e__table_list1"><li class="e__table_list1item">
+<p class="e__listtxt"><b class="e__b">标准</b>：IEEE 802.3ab（1000BASE-T）、IEEE 802.3u（100BASE-TX）、IEEE 802.3（10BASE-T）</p>
+</li>
+<li class="e__table_list1item">
+<p class="e__listtxt"><b class="e__b">数据速率</b><sup class="e__sup">*</sup>：1000/100/10Mbps（自动侦测）</p>
+</li>
+<li class="e__table_list1item">
+<p class="e__listtxt"><b class="e__b">端口</b>：1000BASE-T/100BASE-TX/10BASE-T（AUTO-MDIX）</p>
+</li>
+</ul><ul class="e__footnote"><li class="e__footnote_item">
+<p class="e__footnotetxt">根据IEEE标准的最大逻辑数据速率；实际速率可能会有所差异。</p>
+</li>
+</ul></td>
+</tr></tbody></table></div>
+<div class="e__table column__full page__page">
+<table class="e__tgroup tabletype__10_00100_Table_FrameAll"><colgroup><col class="e__colspec" width="22.6%"><col class="e__colspec" width="77.3%"></colgroup><thead class="e__thead"><tr class="e__row"><th class="e__entry" colspan="2" align="left">
+<p class="e__p">Wi‑Fi/蓝牙</p>
+</th>
+</tr></thead><tbody class="e__tbody"><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">Wi-Fi</b></p>
+</td>
+<td class="e__entry">
+<ul class="e__table_list1"><li class="e__table_list1item">
+<p class="e__listtxt"><b class="e__b">标准</b>：</p>
+<ul class="e__table_list2"><li class="e__table_list2item">
+<p class="e__listtxt">IEEE 802.11b/g/n（非洲、亚洲和大洋洲）</p>
+</li>
+<li class="e__table_list2item">
+<p class="e__listtxt">IEEE 802.11b/g/n/a/ac（欧洲、美国、加拿大、墨西哥）</p>
+</li>
+<li class="e__table_list2item">
+<p class="e__listtxt">IEEE 802.11b/g/n/a（美洲其他国家）</p>
+</li>
+</ul></li>
+<li class="e__table_list1item">
+<p class="e__listtxt"><b class="e__b">操作频率</b>：</p>
+<ul class="e__table_list2"><li class="e__table_list2item">
+<p class="e__listtxt">2412−2462MHz（通道11；非洲、亚洲和大洋洲）</p>
+</li>
+<li class="e__table_list2item">
+<p class="e__listtxt">2412−2462MHz（通道11）和5180−5825MHz（美国、加拿大、墨西哥）</p>
+</li>
+<li class="e__table_list2item">
+<p class="e__listtxt">2412−2462MHz（通道11）和5180−5805MHz（美洲其他国家）</p>
+</li>
+<li class="e__table_list2item">
+<p class="e__listtxt">2412–2462MHz（通道11）和5745–5805MHz（格鲁吉亚）</p>
+</li>
+<li class="e__table_list2item">
+<p class="e__listtxt">2412–2462MHz（通道11）和5180–5320MHz（欧洲其他国家）</p>
+</li>
+</ul></li>
+<li class="e__table_list1item">
+<p class="e__listtxt"><b class="e__b">最大输出功率（EIRP）</b>：</p>
+<ul class="e__table_list2"><li class="e__table_list2item">
+<p class="e__listtxt">2.4GHz频段：8.4dBm</p>
+</li>
+<li class="e__table_list2item">
+<p class="e__listtxt">5GHz频段：6.0dBm（格鲁吉亚）</p>
+</li>
+<li class="e__table_list2item">
+<p class="e__listtxt">5GHz频段：9.0dBm（其他国家）</p>
+</li>
+</ul></li>
+<li class="e__table_list1item">
+<p class="e__listtxt"><b class="e__b">验证</b>：开放式、WPA2-PSK、WPA3-SAE</p>
+</li>
+</ul></td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">蓝牙</b></p>
+</td>
+<td class="e__entry">
+<ul class="e__table_list1"><li class="e__table_list1item">
+<p class="e__listtxt"><b class="e__b">通讯协议</b>：蓝牙技术规格5.0版</p>
+</li>
+<li class="e__table_list1item">
+<p class="e__listtxt"><b class="e__b">操作频率</b>：</p>
+<ul class="e__table_list2"><li class="e__table_list2item">
+<p class="e__listtxt">蓝牙：2402–2480MHz</p>
+</li>
+<li class="e__table_list2item">
+<p class="e__listtxt">蓝牙低功耗：2402–2480MHz</p>
+</li>
+</ul></li>
+<li class="e__table_list1item">
+<p class="e__listtxt"><b class="e__b">最大输出功率（EIRP）</b>：</p>
+<ul class="e__table_list2"><li class="e__table_list2item">
+<p class="e__listtxt">蓝牙：2.9dBm</p>
+</li>
+<li class="e__table_list2item">
+<p class="e__listtxt">蓝牙低功耗：1.4dBm</p>
+</li>
+</ul></li>
+</ul></td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">范围（视线）</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">约10m<sup class="e__sup">*</sup><span class="e__font name__SingoL"><sup class="e__sup"></sup></span></p>
+<ul class="e__footnote"><li class="e__footnote_item">
+<p class="e__footnotetxt">无干扰。范围可能根据测位状态和有无障碍物而异。</p>
+</li>
+</ul></td>
+</tr></tbody></table></div>
+<div class="e__table column__full page__page">
+<table class="e__tgroup tabletype__10_00100_Table_FrameAll"><colgroup><col class="e__colspec" width="25%"><col class="e__colspec" width="74.9%"></colgroup><thead class="e__thead"><tr class="e__row"><th class="e__entry" colspan="2" align="left">
+<p class="e__p">位置数据</p>
+</th>
+</tr></thead><tbody class="e__tbody"><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">支持的GNS系统</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">GPS（美国）、GLONASS（俄罗斯）、QZSS（日本）</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">获取的数据</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">纬度、经度、海拔、UTC（世界协调时间）</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">时钟同步</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">照相机时钟可设为通过GNSS所获取的时间</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">跟踪日志</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">兼容NMEA</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">日志间隔</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">15秒、30秒、1分钟、2分钟、5分钟</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">日志记录最长时间</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">6、12或24小时</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">日志删除</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">支持</p>
+</td>
+</tr></tbody></table></div>
+<div class="e__table column__full">
+<table class="e__tgroup tabletype__10_00100_Table_FrameAll"><colgroup><col class="e__colspec" width="25%"><col class="e__colspec" width="74.9%"></colgroup><thead class="e__thead"><tr class="e__row"><th class="e__entry" colspan="2" align="left">
+<p class="e__p">电源</p>
+</th>
+</tr></thead><tbody class="e__tbody"><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">电池</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">一块EN‑EL18d锂离子电池组*</p>
+<ul class="e__footnote"><li class="e__footnote_item">
+<p class="e__footnotetxt">也可使用EN‑EL18c、EN‑EL18b、EN‑EL18a和EN‑EL18锂离子电池组。但是请注意，电池完全充满一次电时比使用EN‑EL18d可拍摄的照片少。EH‑7P可充电电源适配器仅可用于为EN‑EL18d、EN‑EL18c和EN‑EL18b锂离子电池组充电。</p>
+</li>
+</ul></td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">可充电电源适配器</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">EH‑7P可充电电源适配器</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">电源适配器</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">EH‑6d；需要EP‑6a照相机电源连接器（另购）</p>
+</td>
+</tr></tbody></table></div>
+<div class="e__table column__full">
+<table class="e__tgroup tabletype__10_00100_Table_FrameAll"><colgroup><col class="e__colspec" width="25%"><col class="e__colspec" width="74.9%"></colgroup><thead class="e__thead"><tr class="e__row"><th class="e__entry" colspan="2" align="left">
+<p class="e__p">三脚架连接孔</p>
+</th>
+</tr></thead><tbody class="e__tbody"><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">三脚架连接孔</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">0.635cm（<sup class="e__sup">1</sup>/<sub class="e__sub">4</sub>英寸，ISO 1222）</p>
+</td>
+</tr></tbody></table></div>
+<div class="e__table column__full page__page">
+<table class="e__tgroup tabletype__10_00100_Table_FrameAll"><colgroup><col class="e__colspec" width="22.6%"><col class="e__colspec" width="77.3%"></colgroup><thead class="e__thead"><tr class="e__row"><th class="e__entry" colspan="2" align="left">
+<p class="e__p">尺寸/重量</p>
+</th>
+</tr></thead><tbody class="e__tbody"><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">尺寸（宽×高×厚）</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">约149×149.5×90.5mm</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">重量</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">约1340g（带电池和存储卡，但不包括机身盖和配件热靴盖）；约1160g（仅照相机机身）</p>
+</td>
+</tr></tbody></table></div>
+<div class="e__table column__full">
+<table class="e__tgroup tabletype__10_00100_Table_FrameAll"><colgroup><col class="e__colspec" width="22.6%"><col class="e__colspec" width="77.3%"></colgroup><thead class="e__thead"><tr class="e__row"><th class="e__entry" colspan="2" align="left">
+<p class="e__p">操作环境</p>
+</th>
+</tr></thead><tbody class="e__tbody"><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">温度</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">−10℃–40℃</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">湿度</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">85%或以下（不结露）</p>
+</td>
+</tr></tbody></table></div>
+<ul class="e__footnote type__bull"><li class="e__footnote_item">
+<p class="e__footnotetxt">除另有说明，规格值的设定依据日本国际相机影像器材工业协会（CIPA）的标准或指南。</p>
+</li>
+<li class="e__footnote_item">
+<p class="e__footnotetxt">相关数据均为使用充满电的电池对照相机的测量值。</p>
+</li>
+<li class="e__footnote_item">
+<p class="e__footnotetxt">照相机上所示的示例图像和本使用说明中的图像和插图均仅用于解释说明。</p>
+</li>
+<li class="e__footnote_item">
+<p class="e__footnotetxt">尼康公司保留可随时更改本使用说明内载之硬件及软件的外观和技术规格的权利。对因本使用说明可能包含的错误而造成的损害，尼康公司不承担法律责任。</p>
+</li>
+</ul></div>
+<div class="e__subtopic">
+<h3 class="e__title" id="battery_charger">MH‑33充电器</h3>
+<div class="e__body">
+<div class="e__table column__full">
+<table class="e__tgroup tabletype__10_00200_Table_Side1"><colgroup><col class="e__colspec" width="24.4%"><col class="e__colspec" width="75.5%"></colgroup><tbody class="e__tbody"><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">额定输入</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">DC 5V/9V，3A/3A</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">充电输出</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">DC 12.6V，1.6A</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">支持的电池</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">EN‑EL18d、EN‑EL18c和EN‑EL18b锂离子电池组</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">充电时间</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">约4小时（使用EN‑EL18c/EN‑EL18b锂离子电池组时约为3小时）</p>
+<ul class="e__footnote"><li class="e__footnote_item">
+<p class="e__footnotetxt">周围温度为25℃的环境下将电量耗尽的电池充满电所需的时间</p>
+</li>
+</ul></td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">操作温度</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">0℃–40℃</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">尺寸（宽×高×厚）</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">约87×25×86.5mm（不包括突起部分）</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">重量</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">约101g</p>
+</td>
+</tr></tbody></table></div>
+<ul class="e__footnote type__none"><li class="e__footnote_item">
+<p class="e__footnotetxt">本产品上的符号代表的意思如下：</p>
+</li>
+<li class="e__footnote_item">
+<p class="e__footnotetxt"><span class="e__font name__01XNB_com">p</span> DC</p>
+</li>
+</ul></div>
+</div>
+<div class="e__subtopic">
+<h3 class="e__title" id="sub_charging_ac_adapter">EH‑7P可充电电源适配器</h3>
+<div class="e__body">
+<div class="e__table column__full">
+<table class="e__tgroup tabletype__10_00200_Table_Side1"><colgroup><col class="e__colspec" width="24.4%"><col class="e__colspec" width="75.5%"></colgroup><tbody class="e__tbody"><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">额定输入</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">AC 100–240V，50/60Hz，MAX0.5 A</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">额定输出</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">DC 5.0V/3.0A</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">支持的电池</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">EN‑EL18d、EN‑EL18c和EN‑EL18b锂离子电池组</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">操作温度</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">0℃–40℃</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">尺寸（宽×高×厚）</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">约65.5×26.5×58.5mm（不包括插头适配器）</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">重量</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">约135g（不包括插头适配器）</p>
+</td>
+</tr></tbody></table></div>
+<ul class="e__footnote type__none"><li class="e__footnote_item">
+<p class="e__footnotetxt">在需要的国家或地区会附送一个安装有插头适配器的EH‑7P；插头适配器的形状根据出售国的不同而异。切勿试图拔出插头适配器，否则可能损坏产品。</p>
+</li>
+<li class="e__footnote_item">
+<p class="e__footnotetxt">本产品上的符号代表的意思如下：</p>
+</li>
+<li class="e__footnote_item">
+<p class="e__footnotetxt"><span class="e__font name__01XNB_com">m</span> AC、<span class="e__font name__01XNB_com">p</span> DC、<span class="e__font name__01XNB_com">q</span> Class II设备（本产品为双重绝缘结构）</p>
+</li>
+</ul></div>
+</div>
+<div class="e__subtopic">
+<h3 class="e__title" id="rechargeable_li-ion_battery">EN‑EL18d锂离子电池组</h3>
+<div class="e__body">
+<div class="e__table column__full">
+<table class="e__tgroup tabletype__10_00200_Table_Side1"><colgroup><col class="e__colspec" width="24.4%"><col class="e__colspec" width="75.5%"></colgroup><tbody class="e__tbody"><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">类型</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">锂离子电池组</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">额定容量</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">10.8V，3300mAh</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">操作温度</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">−10℃–40℃（使用Z 9时）</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">尺寸（宽×高×厚）</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">约56.5×27×82.5mm</p>
+</td>
+</tr><tr class="e__row"><td class="e__entry">
+<p class="e__p"><b class="e__b">重量</b></p>
+</td>
+<td class="e__entry">
+<p class="e__p">约175g（不包括端子盖）</p>
+</td>
+</tr></tbody></table></div>
+<div class="e__attention">
+<div class="e__caution">
+<div class="e__attention_body">
+<div id="caution_disposing_of_data_storage_devices" class="e__title page__page ac_btn">注意事项：数据存储设备的处理</div>
+<div class="ac_box"><p class="e__p">请注意，删除照片、格式化存储卡或其他数据存储设备不会完全删除原始图像数据。有时可以通过市售软件，从丢弃的存储设备中恢复被删除的文件，同时这也将潜在地导致个人图像数据被他人恶意利用。确保这些数据的隐私安全属于用户的职责范围。</p><p class="e__p">丢弃数据存储设备，或将其所有权转让给他人之前，请使用市售的删除软件删除所有数据，或是对该设备进行格式化，然后用不包含私人信息的照片（如空旷天空的图片）将其完全重新填满。当使用物理方式毁坏数据存储设备时，请注意不要受伤。</p><p class="e__p">丢弃照相机或将其所有权转让给他人之前，您也应使用照相机设定菜单中的[<span class="e__camera_menu">重设所有设定</span>]项目删除网络设定和其他个人信息。</p></div></div>
+<div class="e__attention_body">
+<div id="caution_supported_standards" class="e__title ac_btn">支持的标准</div>
+<div class="ac_box"><ul class="e__attention_list1"><li class="e__attention_list1item">
+<p class="e__listtxt"><b class="e__b">DCF 2.0版</b>：DCF规则是数码照相机行业广泛应用的标准，用于确保不同品牌的照相机之间的兼容性。</p>
+</li>
+<li class="e__attention_list1item">
+<p class="e__listtxt"><b class="e__b">Exif 2.32版</b>：本照相机支持Exif（数码照相机可交换图像文件格式）2.32版本，该标准旨在提高打印机和数码照相机之间的互操作性，从而更容易进行高品质打印。在Exif兼容打印机上输出图像时，可以利用存储在照片中的信息进行优良的色彩还原。有关详细信息，请参阅打印机的使用说明。</p>
+</li>
+<li class="e__attention_list1item">
+<p class="e__listtxt"><b class="e__b">HDMI</b>：高清晰度多媒体接口是一种针对用于消费者电子产品和AV设备的多媒体接口的标准。该标准确保了可仅通过一根连接线将音视频数据和控制信号传输至HDMI兼容设备。</p>
+</li>
+</ul></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-print" id="questionnaire">
+<hr style="margin-top: 4em; border-top: dotted 4px #aaa">
+<iframe src="https://webc.nikonimglib.com/form/pub/info2/onlinemanual_zh-cn" frameborder="0" style="width: 100%; height: 520px;"></iframe>
+</div>
+
+<script>
+var ua = window.navigator.userAgent.toLowerCase();
+
+if (ua.indexOf('safari') !== -1 && ua.indexOf('chrome') === -1 && ua.indexOf('edge') === -1){    //UAでSafariのみ判別
+    document.getElementById("questionnaire").style.display="none";   // Safariからのアクセス時にはアンケートを非表示
+}
+</script>
+<nav class="hidden-print"><!--TODO: /nikon_manual--><ul class="pager"><li class="previous"><a href="17_technical_notes_07.html"><span class="glyphicon glyphicon-chevron-left"></span></a></li><li class="next"><a href="17_technical_notes_09.html"><span class="glyphicon glyphicon-chevron-right"></span></a></li></ul></nav><div id="nav-page-top">
+<p class="pager"><a href="#page-top"><span class="glyphicon glyphicon-chevron-up"></span></a></p>
+</div>
+</div>
+</div>
+<!-- row -->
+</div>
+<!-- container -->
+<!-- footer css -->
+<style type="text/css">
+footer {margin-bottom: 4em; border-top: #d4d4d4 solid 1px; padding-top: 1em;}
+footer .text-muted {font-size: small;}
+</style>
+<!-- /footer css -->
+
+<footer class="footer hidden-print">
+<div class="container">
+<ul class="list-inline pull-left text-muted">
+<li><i class="glyphicon glyphicon-chevron-right"></i>&nbsp;<a href="https://www.nikon.com/privacy/index.htm">Privacy</a></li>
+<li><i class="glyphicon glyphicon-chevron-right"></i>&nbsp;<a href="https://www.nikon.com/usage/index.htm">Term of Use</a></li>
+</ul>
+<p class="text-muted text-right">&copy;
+<script type="text/javascript">
+myDate = new Date() ;myYear = myDate.getFullYear ();document.write(myYear);
+</script>
+Nikon Corporation</p>
+</div>
+</footer>
+</div>
+<!-- pure-pusher -->
+</div>
+<!-- pure-pusher-container -->
+<nav class="toc pure-drawer hidden-md hidden-lg hidden-print" data-position="right"><p class="text-bold"><span class="glyphicon glyphicon-chevron-left"></span>&nbsp;<a href="index.html">Z&nbsp;9参考指南首页</a></p>
+
+<p class="search-title">搜索<em>参考指南</em></p>
+<div class="search-inner mb2em">
+<p class="text-bold mb0">关键词搜索</p>
+<p class="small"><span class="glyphicon glyphicon-question-sign"></span>&nbsp;请输入关键字，而不是句子。</p>
+<form id="commonSearch" role="search" name="commonSearch" action="search_result.html" method="get">
+<div class="input-group mb1em">
+<input type="text" class="form-control" placeholder="输入关键词" name="q" value="">
+<input type="hidden" value="0" name="offset">
+<span class="input-group-btn">
+<button class="btn btn-primary" type="submit" title="搜索"><img src="css/i_search_wt.svg" alt="" width="16px" height="16px"></button>
+</span>
+</div>
+</form>
+</div>
+
+<p class="toc_title">目录</p>
+
+<p class="toc_direct nav01_01"><a href="01_front_matter_01.html">想立即进行拍摄时</a></p>
+<p class="toc_direct nav02_01"><a href="01_front_matter_02.html">包装内物品</a></p>
+<p class="toc_direct nav03_01"><a href="01_front_matter_03.html">关于本使用说明</a></p>
+<p class="toc_direct nav04_01"><a href="01_front_matter_04.html">安全须知</a></p>
+<p class="toc_direct nav05_01"><a href="01_front_matter_05.html">声明</a></p>
+
+<p class="chapter_title nav06">开始了解照相机及其菜单</p>
+<ul>
+<li class="nav06_01"><a href="02_getting_to_know_the_camera_01.html">照相机部件</a></li>
+<li class="nav06_02"><a href="02_getting_to_know_the_camera_02.html">菜单</a></li>
+</ul>
+
+<p class="chapter_title nav07">开始步骤</p>
+<ul>
+<li class="nav07_01"><a href="03_first_step_01.html">安装挂带</a></li>
+<li class="nav07_02"><a href="03_first_step_02.html">电池充电</a></li>
+<li class="nav07_03"><a href="03_first_step_03.html">插入电池</a></li>
+<li class="nav07_04"><a href="03_first_step_04.html">插入存储卡</a></li>
+<li class="nav07_05"><a href="03_first_step_05.html">安装镜头</a></li>
+<li class="nav07_06"><a href="03_first_step_06.html">照相机设定</a></li>
+</ul>
+
+<p class="chapter_title nav08">基础拍摄与播放</p>
+<ul>
+<li class="nav08_01"><a href="04_basic_photography_and_playback_01.html">拍摄照片</a></li>
+<li class="nav08_02"><a href="04_basic_photography_and_playback_02.html">拍摄视频</a></li>
+<li class="nav08_03"><a href="04_basic_photography_and_playback_03.html">播放</a></li>
+</ul>
+
+<p class="chapter_title nav09">拍摄设定</p>
+<ul>
+<li class="nav09_01"><a href="05_shooting_settings_01.html">图像记录选项（图像区域、品质和尺寸）</a></li>
+<li class="nav09_02"><a href="05_shooting_settings_02.html">对焦</a></li>
+<li class="nav09_03"><a href="05_shooting_settings_03.html">曝光</a></li>
+<li class="nav09_04"><a href="05_shooting_settings_04.html">释放模式</a></li>
+<li class="nav09_05"><a href="05_shooting_settings_05.html">ISO感光度</a></li>
+<li class="nav09_06"><a href="05_shooting_settings_06.html">白平衡</a></li>
+<li class="nav09_07"><a href="05_shooting_settings_07.html">包围</a></li>
+<li class="nav09_08"><a href="05_shooting_settings_08.html">优化校准</a></li>
+<li class="nav09_09"><a href="05_shooting_settings_09.html">位置数据</a></li>
+<li class="nav09_10"><a href="05_shooting_settings_10.html">双键重设</a></li>
+</ul>
+
+<p class="chapter_title nav10">视频录制</p>
+<ul>
+<li class="nav10_01"><a href="06_video_recording_01.html">视频文件类型</a></li>
+<li class="nav10_02"><a href="06_video_recording_02.html">视频画面尺寸和帧频选项</a></li>
+<li class="nav10_03"><a href="06_video_recording_03.html">视频图像区域选项</a></li>
+<li class="nav10_04"><a href="06_video_recording_04.html">拍摄视频时的注意事项</a></li>
+<li class="nav10_05"><a href="06_video_recording_05.html">RAW视频</a></li>
+<li class="nav10_06"><a href="06_video_recording_06.html">录制HLG视频</a></li>
+<li class="nav10_07"><a href="06_video_recording_07.html">录制N‑Log视频</a></li>
+</ul>
+
+<p class="chapter_title nav11">查看和润饰照片</p>
+<ul>
+<li class="nav11_01"><a href="07_viewing_and_retouching_pictures_01.html">查看照片</a></li>
+<li class="nav11_02"><a href="07_viewing_and_retouching_pictures_02.html">照片信息</a></li>
+<li class="nav11_03"><a href="07_viewing_and_retouching_pictures_03.html"><span class="e__font name__ICN1_com">i</span>按钮（播放模式）</a></li>
+<li class="nav11_04"><a href="07_viewing_and_retouching_pictures_04.html">变焦播放</a></li>
+<li class="nav11_05"><a href="07_viewing_and_retouching_pictures_05.html">保护照片不被删除</a></li>
+<li class="nav11_06"><a href="07_viewing_and_retouching_pictures_06.html">为照片评级</a></li>
+<li class="nav11_07"><a href="07_viewing_and_retouching_pictures_07.html">选择照片以上传</a></li>
+<li class="nav11_08"><a href="07_viewing_and_retouching_pictures_08.html">筛选的播放</a></li>
+<li class="nav11_09"><a href="07_viewing_and_retouching_pictures_09.html">查看幻灯播放</a></li>
+<li class="nav11_10"><a href="07_viewing_and_retouching_pictures_10.html">删除照片</a></li>
+<li class="nav11_11"><a href="07_viewing_and_retouching_pictures_11.html">创建润饰后的副本</a></li>
+<li class="nav11_12"><a href="07_viewing_and_retouching_pictures_12.html">编辑视频</a></li>
+</ul>
+
+<p class="chapter_title nav12">语音留言</p>
+<ul>
+<li class="nav12_01"><a href="08_voice_memos_01.html">录制语音留言</a></li>
+<li class="nav12_02"><a href="08_voice_memos_02.html">播放语音留言</a></li>
+</ul>
+
+<p class="chapter_title nav13">连接至HDMI电视机和录制设备</p>
+<ul>
+<li class="nav13_01"><a href="09_connecting_to_hdmi_tvs_and_recorders_01.html">连接至HDMI设备</a></li>
+<li class="nav13_02"><a href="09_connecting_to_hdmi_tvs_and_recorders_02.html">电视机</a></li>
+<li class="nav13_03"><a href="09_connecting_to_hdmi_tvs_and_recorders_03.html">录制设备</a></li>
+</ul>
+
+<p class="chapter_title nav14">连接至智能设备</p>
+<ul>
+<li class="nav14_01"><a href="10_connecting_to_smart_devices_01.html">SnapBridge应用程序</a></li>
+<li class="nav14_02"><a href="10_connecting_to_smart_devices_02.html">无线连接</a></li>
+</ul>
+
+<p class="chapter_title nav15">连接至计算机或FTP服务器</p>
+<ul>
+<li class="nav15_01"><a href="11_connecting_to_computers_or_ftp_servers_01.html">建立连接</a></li>
+<li class="nav15_02"><a href="11_connecting_to_computers_or_ftp_servers_02.html">计算机：通过USB连接</a></li>
+<li class="nav15_03"><a href="11_connecting_to_computers_or_ftp_servers_03.html">计算机：通过以太网或无线局域网络连接</a></li>
+<li class="nav15_04"><a href="11_connecting_to_computers_or_ftp_servers_04.html">FTP服务器：通过以太网或无线局域网络连接</a></li>
+<li class="nav15_05"><a href="11_connecting_to_computers_or_ftp_servers_05.html">无线局域网络和以太网连接故障排除</a></li>
+</ul>
+
+<p class="chapter_title nav16">连接至其他照相机</p>
+<ul>
+<li class="nav16_01"><a href="12_connecting_to_other_cameras_01.html">照相机之间的连接有什么作用</a></li>
+<li class="nav16_02"><a href="12_connecting_to_other_cameras_02.html">同步释放</a></li>
+<li class="nav16_03"><a href="12_connecting_to_other_cameras_03.html">同步照相机时钟</a></li>
+</ul>
+
+<p class="chapter_title nav17">闪光拍摄</p>
+<ul>
+<li class="nav17_01"><a href="13_flash_photography_01.html">“连机”与“遥控”</a></li>
+<li class="nav17_02"><a href="13_flash_photography_02.html">使用连机闪光灯</a></li>
+<li class="nav17_03"><a href="13_flash_photography_03.html">闪光控制模式</a></li>
+<li class="nav17_04"><a href="13_flash_photography_04.html">闪光模式</a></li>
+<li class="nav17_05"><a href="13_flash_photography_05.html">闪光补偿</a></li>
+<li class="nav17_06"><a href="13_flash_photography_06.html">FV锁定</a></li>
+</ul>
+
+<p class="chapter_title nav18">遥控闪光拍摄</p>
+<ul>
+<li class="nav18_01"><a href="14_remote_flash_photography_01.html">什么是遥控闪光拍摄？</a></li>
+<li class="nav18_02"><a href="14_remote_flash_photography_02.html">无线电AWL</a></li>
+<li class="nav18_03"><a href="14_remote_flash_photography_03.html">光学AWL</a></li>
+</ul>
+
+<p class="chapter_title nav19">菜单指南</p>
+<ul>
+<li class="nav19_01"><a href="15_menu_guide_01.html">默认设定</a></li>
+<li class="nav19_02"><a href="15_menu_guide_02.html"><span class="e__font name__ICN2_com">C</span> 照片拍摄菜单：拍摄选项</a></li>
+<li class="nav19_03"><a href="15_menu_guide_03.html"><span class="e__font name__ICN3_com">1</span> 视频拍摄菜单：视频拍摄选项</a></li>
+<li class="nav19_04"><a href="15_menu_guide_04.html"><span class="e__font name__ICN2_com">A</span> 自定义设定：微调照相机设定</a></li>
+<li class="nav19_05"><a href="15_menu_guide_05.html"><span class="e__font name__ICN2_com">D</span> 播放菜单：管理照片</a></li>
+<li class="nav19_06"><a href="15_menu_guide_06.html"><span class="e__font name__ICN2_com">B</span> 设定菜单：照相机设定</a></li>
+<li class="nav19_07"><a href="15_menu_guide_07.html"><span class="e__font name__ICN2_com">F</span> 网络菜单：网络连接</a></li>
+<li class="nav19_08"><a href="15_menu_guide_08.html"><span class="e__font name__ICN2_com">O</span> 我的菜单/<span class="e__font name__ICN3_com">m</span> 最近的设定</a></li>
+</ul>
+
+<p class="chapter_title nav20">故障排除</p>
+<ul>
+<li class="nav20_01"><a href="16_troubleshooting_01.html">联系客户支持前</a></li>
+<li class="nav20_02"><a href="16_troubleshooting_02.html">问题和解决方法</a></li>
+<li class="nav20_03"><a href="16_troubleshooting_03.html">提醒与错误信息</a></li>
+</ul>
+
+<p class="chapter_title nav21">技术注释</p>
+<ul>
+<li class="nav21_01"><a href="17_technical_notes_01.html">兼容的镜头和配件</a></li>
+<li class="nav21_02"><a href="17_technical_notes_02.html">照相机显示</a></li>
+<li class="nav21_03"><a href="17_technical_notes_03.html">兼容的闪光灯组件</a></li>
+<li class="nav21_04"><a href="17_technical_notes_04.html">兼容的配件</a></li>
+<li class="nav21_05"><a href="17_technical_notes_05.html">软件</a></li>
+<li class="nav21_06"><a href="17_technical_notes_06.html">照相机的保养</a></li>
+<li class="nav21_07"><a href="17_technical_notes_07.html">照相机和电池的保养：注意事项</a></li>
+<li class="nav21_08"><a href="17_technical_notes_08.html">技术规格</a></li>
+<li class="nav21_09"><a href="17_technical_notes_09.html">经认可的存储卡</a></li>
+<li class="nav21_10"><a href="17_technical_notes_10.html">存储卡容量</a></li>
+<li class="nav21_11"><a href="17_technical_notes_11.html">电池持久力</a></li>
+<li class="nav21_12"><a href="17_technical_notes_12.html">商标和许可证</a></li>
+<li class="nav21_13"><a href="17_technical_notes_13.html">注意事项：位置数据（GPS/GLONASS）</a></li>
+<li class="nav21_14"><a href="17_technical_notes_15.html">蓝牙和Wi‑Fi（无线局域网络）</a></li>
+</ul>
+
+<p class="chapter_title nav22">“C”固件3.00版的变更</p>
+<ul>
+<li class="nav22_01"><a href="18_added_functions_300_01.html">“C”固件3.00版所提供的功能</a></li>
+<li class="nav22_02"><a href="18_added_functions_300_02.html">“C”固件3.00版所作的变更</a></li>
+<li class="nav22_03"><a href="18_added_functions_300_03.html">新的仅限DX的图像尺寸选项</a></li>
+<li class="nav22_04"><a href="18_added_functions_300_04.html">新的高速画面捕捉选项：C60</a></li>
+<li class="nav22_05"><a href="18_added_functions_300_05.html">新的菜单项目：“高频闪烁消减”</a></li>
+<li class="nav22_06"><a href="18_added_functions_300_06.html">新的“焦距变化拍摄”选项: “对焦位置自动重设”</a></li>
+<li class="nav22_07"><a href="18_added_functions_300_07.html">新的视频录制功能：高分辨率数字变焦</a></li>
+<li class="nav22_08"><a href="18_added_functions_300_08.html">新的“时间码”选项：“使用遥控重设”</a></li>
+<li class="nav22_09"><a href="18_added_functions_300_09.html">“优先考虑取景器”显示屏模式</a></li>
+<li class="nav22_10"><a href="18_added_functions_300_10.html">新的“对焦点显示”选项：“3D跟踪对焦点颜色”</a></li>
+<li class="nav22_11"><a href="18_added_functions_300_11.html">用于闪光拍摄的新查看模式选项</a></li>
+<li class="nav22_12"><a href="18_added_functions_300_12.html">新的显示屏亮度选项</a></li>
+<li class="nav22_13"><a href="18_added_functions_300_13.html">竖直方向播放</a></li>
+<li class="nav22_14"><a href="18_added_functions_300_14.html">用于以“手动预设”白平衡所拍摄照片的新色温显示</a></li>
+<li class="nav22_15"><a href="18_added_functions_300_15.html">按组处理连拍</a></li>
+<li class="nav22_16"><a href="18_added_functions_300_16.html">新的播放显示选项：“文件信息”</a></li>
+<li class="nav22_17"><a href="18_added_functions_300_17.html">新的释放定时指示选项：“Type A自动还原延迟”</a></li>
+<li class="nav22_18"><a href="18_added_functions_300_18.html">用于中央重点测光的新显示选项</a></li>
+<li class="nav22_19"><a href="18_added_functions_300_19.html">自定义设定f2“自定义控制（拍摄）”和g2“自定义控制”的新选项</a></li>
+<li class="nav22_20"><a href="18_added_functions_300_20.html">自定义设定f3“自定义控制（播放）”的新选项</a></li>
+<li class="nav22_21"><a href="18_added_functions_300_21.html">用于CFexpress存储卡的新“完全格式化”选项</a></li>
+<li class="nav22_22"><a href="18_added_functions_300_22.html">新的FTP连接指示</a></li>
+<li class="nav22_23"><a href="18_added_functions_300_23.html">支持FTPS</a></li>
+<li class="nav22_24"><a href="18_added_functions_300_24.html">新的遥控照相机计数显示</a></li>
+<li class="nav22_25"><a href="18_added_functions_300_25.html">新的“ATOMOS AirGlu BT选项”项目</a></li>
+<li class="nav22_26"><a href="18_added_functions_300_26.html">“C”固件3.00版的菜单项目和默认值</a></li>
+<li class="nav22_27"><a href="18_added_functions_300_27.html">“C”固件3.00版的升级后规格</a></li>
+</ul>
+</nav><label class="pure-overlay" data-overlay="right" for="pure-toggle-right"></label></div>
+<!-- /pure-container -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster --><script src="../js/jquery-1.11.3.min.js"></script><script src="../js/bootstrap.min.js"></script><!-- IE10 viewport hack for Surface/desktop Windows 8 bug --><script src="../js/ie10-viewport-bug-workaround.js"></script><!-- Custom Script for this template --><script src="../js/dslr_master.js"></script><script type="text/javascript">$(function(){ $(".nav21").addClass("on"); $(".nav21").next().css("display", "block"); $(".nav21_08").addClass("active"); });</script><!--[Analytics]-->
+<script type="text/javascript" src="https://downloadcenter.nikonimglib.com/common2/js/s_code.js"></script>
+<!--[Analytics]--></body></html>

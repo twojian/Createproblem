@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>ResNet-50 缺陷检测模型架构规范与产线数据集特征说明书</title>
+<style>
+body{font-family:"Microsoft YaHei",sans-serif;max-width:1100px;margin:0 auto;padding:20px;color:#333;line-height:1.7}
+h1{color:#1a5276;border-bottom:3px solid #2980b9;padding-bottom:8px}
+h2{color:#2471a3;border-bottom:2px solid #85c1e9;padding-bottom:5px;margin-top:30px}
+h3{color:#2e86c1;margin-top:20px}
+table{border-collapse:collapse;width:100%;margin:15px 0;font-size:14px}
+th{background:#2980b9;color:#fff;padding:10px 8px;text-align:center}
+td{padding:8px;text-align:center;border:1px solid #d4e6f1}
+tr:nth-child(even){background:#eaf2f8}
+.info-box{background:#d6eaf8;border-left:4px solid #2980b9;padding:12px 18px;margin:15px 0}
+.warning-box{background:#fdebd0;border-left:4px solid #e67e22;padding:12px 18px;margin:15px 0}
+.code{background:#f4f4f4;padding:2px 6px;border-radius:3px;font-family:Consolas,monospace;font-size:13px}
+</style>
+</head>
+<body>
+<h1>ResNet-50 缺陷检测模型架构规范与产线数据集特征说明书</h1>
+<p><strong>文档版本：</strong>v2.1 | <strong>编制日期：</strong>2026年5月18日 | <strong>编制部门：</strong>某公司工业AI事业部</p>
+
+<h2>一、模型架构详细配置</h2>
+<h3>1.1 主干网络：ResNet-50</h3>
+<table>
+<tr><th>层级</th><th>输出尺寸</th><th>配置详情</th><th>BN状态</th></tr>
+<tr><td>Input</td><td>2048×1536×3</td><td>RGB图像，归一化mean=[0.485,0.456,0.406], std=[0.229,0.224,0.225]</td><td>-</td></tr>
+<tr><td>Conv1</td><td>1024×768×64</td><td>7×7 conv, stride=2, padding=3</td><td>BN(ReLU前) ✓</td></tr>
+<tr><td>MaxPool</td><td>512×384×64</td><td>3×3, stride=2, padding=1</td><td>-</td></tr>
+<tr><td>Layer1(ResBlock×3)</td><td>256×192×256</td><td>[1×1,64]-[3×3,64]-[1×1,256] ×3, stride=1</td><td>BN(ReLU前) ✓</td></tr>
+<tr><td>Layer2(ResBlock×4)</td><td>128×96×512</td><td>[1×1,128]-[3×3,128]-[1×1,512] ×4, stride=2</td><td>BN(ReLU前) ✓</td></tr>
+<tr><td>Layer3(ResBlock×6)</td><td>64×48×1024</td><td>[1×1,256]-[3×3,256]-[1×1,1024] ×6, stride=2</td><td>BN(ReLU前) ✓</td></tr>
+<tr><td>Layer4(ResBlock×3)</td><td>32×24×2048</td><td>[1×1,512]-[3×3,512]-[1×1,2048] ×3, stride=2</td><td>BN(ReLU前) ✓</td></tr>
+<tr><td>AvgPool</td><td>1×1×2048</td><td>AdaptiveAvgPool2d(1,1)</td><td>-</td></tr>
+<tr><td>FC</td><td>2048→1024</td><td>Linear(2048,1024) + ReLU</td><td>-</td></tr>
+<tr><td>Dropout</td><td>1024</td><td>p=0.0(默认关闭，实验中可变)</td><td>-</td></tr>
+<tr><td>FC_Cls</td><td>1024→5</td><td>Linear(1024,5) + Softmax</td><td>-</td></tr>
+</table>
+
+<div class="info-box">
+<strong>说明：</strong>所有卷积层的BatchNorm均位于Conv之后、ReLU之前。全连接层不含BatchNorm层。Dropout层默认关闭(p=0)，实验中根据正则化策略动态调整。
+</div>
+
+<h3>1.2 训练超参数基准配置</h3>
+<table>
+<tr><th>参数</th><th>默认值</th><th>说明</th></tr>
+<tr><td>优化器</td><td>SGD + Momentum(0.9)</td><td>Nesterov=False</td></tr>
+<tr><td>初始学习率</td><td>0.001</td><td>第80epoch降至1e-4，第110epoch降至1e-5</td></tr>
+<tr><td>Batch Size</td><td>32</td><td>单GPU(NVIDIA A100-40GB)</td></tr>
+<tr><td>Weight Decay</td><td>0.0</td><td>L2正则化实验时启用</td></tr>
+<tr><td>Epochs</td><td>120</td><td>EarlyStopping=15(ValLoss不下降则停止)</td></tr>
+<tr><td>Loss Function</td><td>CrossEntropyLoss</td><td>无类别权重</td></tr>
+<tr><td>数据增强(训练)</td><td>RandomHorizontalFlip(0.5)+RandomRotation(±10°)</td><td>基础增强仅用于训练集</td></tr>
+<tr><td>输入尺寸</td><td>2048×1536</td><td>保持原始分辨率</td></tr>
+</table>
+
+<h2>二、产线数据集特征分析</h2>
+<h3>2.1 数据集规模与划分</h3>
+<table>
+<tr><th>数据集</th><th>采集时间</th><th>产线</th><th>总样本数</th><th>训练集</th><th>验证集</th></tr>
+<tr><td>A产线数据</td><td>2025年9月-10月</td><td>A产线</td><td>8,400</td><td>6,700</td><td>1,700</td></tr>
+<tr><td>B产线数据</td><td>2026年1月-2月</td><td>B产线</td><td>3,200</td><td>-</td><td>3,200(全量评测)</td></tr>
+</table>
+
+<h3>2.2 类别分布(A产线训练集)</h3>
+<table>
+<tr><th>缺陷类别</th><th>训练集样本数</th><th>验证集样本数</th><th>占比</th><th>不平衡比(相对最少类)</th></tr>
+<tr><td>划痕(Scratch)</td><td>2,144</td><td>536</td><td>32.0%</td><td>4.98x</td></tr>
+<tr><td>凹坑(Dent)</td><td>1,876</td><td>469</td><td>28.0%</td><td>4.36x</td></tr>
+<tr><td>氧化斑(Oxidation)</td><td>1,206</td><td>301</td><td>18.0%</td><td>2.80x</td></tr>
+<tr><td>毛刺(Burr)</td><td>1,044</td><td>261</td><td>15.6%</td><td>2.43x</td></tr>
+<tr><td>正常(Normal)</td><td>430</td><td>133</td><td>6.4%</td><td>1.00x(基准)</td></tr>
+</table>
+
+<div class="warning-box">
+<strong>注意：</strong>"正常"类别严重欠采样(仅6.4%)，可能导致模型偏向于将样本预测为缺陷类。建议训练时对正常类施加2-4倍权重或进行过采样。
+</div>
+
+<h3>2.3 图像质量统计指标</h3>
+<table>
+<tr><th>指标</th><th>A产线(均值±标准差)</th><th>B产线(均值±标准差)</th><th>差异</th></tr>
+<tr><td>平均亮度</td><td>128.5 ± 22.3</td><td>156.8 ± 31.7</td><td>+22.0% (B更亮)</td></tr>
+<tr><td>对比度(RMS)</td><td>48.2 ± 12.5</td><td>35.6 ± 14.8</td><td>-26.1% (B对比度更低)</td></tr>
+<tr><td>模糊度(Laplacian方差)</td><td>152.3 ± 45.6</td><td>98.7 ± 52.3</td><td>-35.2% (B更模糊)</td></tr>
+<tr><td>有效标注区域占比</td><td>78.5% ± 8.2%</td><td>82.1% ± 7.6%</td><td>+4.6%</td></tr>
+<tr><td>平均图像文件大小</td><td>1.85 MB</td><td>2.12 MB</td><td>+14.6%</td></tr>
+</table>
+
+<div class="warning-box">
+<strong>关键差异：</strong>B产线图像的平均亮度比A产线高22%，对比度低26%，模糊度高35%。这三项差异表明两产线存在显着的数据分布偏移(Domain Shift)，是模型在B产线泛化性能骤降的主要环境因素。
+</div>
+
+<h3>2.4 标注一致性评估</h3>
+<table>
+<tr><th>数据集</th><th>质检员数量</th><th>Fleiss' Kappa</th><th>一致性等级</th><th>说明</th></tr>
+<tr><td>A产线</td><td>3人(工龄≥3年)</td><td>0.823</td><td>几乎完美一致</td><td>A产线数据标注质量高</td></tr>
+<tr><td>B产线</td><td>3人(工龄≥3年)</td><td>0.741</td><td>实质性一致</td><td>B产线部分样本(氧化斑vs正常)存在标注歧义</td></tr>
+</table>
+
+<p><strong>标注歧义分析：</strong>B产线中氧化斑类与正常类样本的标注一致性最低(Kappa=0.61)，主要原因是B产线光照偏亮导致轻微氧化痕迹与正常表面纹理在视觉上难以区分。建议在B产线评测报告中单独标注"氧化斑vs正常"混淆对的F1分数。</p>
+
+<h2>三、模型容量与数据复杂度匹配分析</h2>
+<table>
+<tr><th>分析维度</th><th>数值</th><th>判断</th></tr>
+<tr><td>ResNet-50总参数量</td><td>23.5M (不含FC头5M)</td><td>-</td></tr>
+<tr><td>训练集样本数</td><td>6,700</td><td>-</td></tr>
+<tr><td>样本/参数比</td><td>0.24:1</td><td class="code">极低，强烈倾向过拟合</td></tr>
+<tr><td>有效类别数</td><td>5类</td><td>-</td></tr>
+<tr><td>类内视觉方差(A产线)</td><td>中低(可控产线环境)</td><td>存在过拟合训练分布的风险</td></tr>
+<tr><td>类间视觉方差(A vs B产线)</td><td>高(光照、对比度、模糊度差异显着)</td><td>跨产线泛化困难</td></tr>
+</table>
+
+<div class="info-box">
+<strong>结论：</strong>样本/参数比极低(0.24:1)是该模型过拟合风险的结构性根源，正则化策略选型必须优先考虑这一问题。同时B产线数据分布偏移意味着即使解决了A产线过拟合，也需要Domain Adaptation或数据增强来提升跨产线泛化。
+</div>
+</body>
+</html>
